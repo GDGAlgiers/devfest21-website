@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "DevFestAlgiers21",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
@@ -15,22 +15,41 @@
   },
   "dependencies": {
     "autoprefixer": "^10.3.7",
+    "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.13.1",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-netlify": "^3.14.0",
+    "gatsby-plugin-next-seo": "^1.8.0",
+    "gatsby-plugin-offline": "^4.14.0",
     "gatsby-plugin-postcss": "^4.14.0",
+    "gatsby-plugin-robots-txt": "^1.6.10",
+    "gatsby-plugin-styled-components": "^4.14.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^3.14.0",
     "postcss": "^8.3.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet-async": "^1.1.2",
+    "react-responsive": "^9.0.0-beta.4",
     "styled-components": "^5.3.1",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.16",
+    "tailwindcss-typography": "^3.1.0"
   },
   "devDependencies": {
-    "prettier": "2.4.1"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-eslint": "^4.0.0",
+    "prettier": "^2.4.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/GDGAlgiers/devfest21-website"
   }
 }
