@@ -50,6 +50,12 @@ export const agendaData = [
         "acticity" : 'openign' , 
         "description" : "this is a small description"
       },  
+      {
+        "startTime" : "9PM" , 
+        "endTime" : "10PM" , 
+        "acticity" : 'openign' , 
+        "description" : "this is a small description"
+      },
   ] ,  
   [
     {
