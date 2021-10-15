@@ -1,32 +1,59 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+
+import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../components/Layout'
+
+const INDEX_SEO = {
+    title: 'Home',
+    description:
+        'GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2021 in its 9th edition to offer speaker sessions, codelabs, workshops and an amazing Hackathon.',
+    openGraph: {
+        url: 'https://devfest21.netlify.app',
+        title: 'Devfest 21 Home',
+        description: 'Devfest21 event from GDG Algiers',
+        images: [
+            {
+                url: 'https://i.ibb.co/kQgBCJD/devfest-Card.png',
+                width: 800,
+                height: 600,
+                alt: 'devfest',
+            },
+        ],
+        site_name: 'Devfest21 GDG Algiers',
+    },
+}
+const { site } = useStaticQuery(
+    graphql`
+        query {
+            site {
+                siteMetadata {
+                    author
+                    keywords
+                    siteUrl
+                }
+            }
+        }
+    `
+)
 
 export default function Home() {
-    const Button = styled.button`
-        background: transparent;
-        border-radius: 3px;
-        border: 2px solid palevioletred;
-        color: palevioletred;
-        margin: 0.5em 1em;
-        padding: 0.25em 1em;
-
-        ${(props) =>
-            props.primary &&
-            css`
-                background: palevioletred;
-                color: white;
-            `}
-    `
-
-    const Container = styled.div`
-        text-align: center;
-    `
-
     return (
-        <Container className="mt-10">
-            <Button>Normal Button</Button>
-            <Button primary>Primary Button</Button>
-            <h3 className="mt-10">Let The Hunt Begin</h3>
-        </Container>
+        <Layout
+            seo={{
+                twitter: {
+                    handle: site.siteMetadata.author,
+                    cardType: 'summary_large_image',
+                },
+                metaTags: [
+                    {
+                        property: 'keywords',
+                        content: site.siteMetadata.keywords.join(','),
+                    },
+                ],
+                ...INDEX_SEO,
+            }}
+        >
+            <h1>Hello World</h1>
+        </Layout>
     )
 }
