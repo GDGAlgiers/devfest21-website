@@ -14,6 +14,7 @@ class Agenda extends Component {
     super(props)
     this.state = {
       dayPlan: agendaData[0],
+      activeDay: [true, false, false],
     }
   }
   render() {
@@ -36,7 +37,7 @@ class Agenda extends Component {
     `
     const Days = styled.div`
       padding: 10px;
-      color: gray;
+      color: ${props => (props.active ? "black" : "gray")};
       cursor: pointer;
     `
     const Slide = styled.div`
@@ -46,10 +47,16 @@ class Agenda extends Component {
     const getDatePlan = key => {
       this.setState({ dayPlan: agendaData[key] })
     }
-    const changeColor = id =>{
-       const clickedElem = document.getElementById(id) ; 
-       
+    const changeColor = id => {
+      const newState = [false, false, false]
+      newState[id] = !newState[id]
+      this.setState({ activeDay: newState })
     }
+    const InderLine = styled.div`
+      background: ${colors.lightBlue};
+      height: 4px;
+      display: ${props => (props.active ? "block" : "none")};
+    `
 
     return (
       <AgendaSection className="grid grid-cols-12 gap-2 md:py-10  md:h-screen relative pr-3 py-3">
@@ -62,13 +69,18 @@ class Agenda extends Component {
           <DaysList className="bg-white p-3 absolute">
             {agendaData.map((elem, key) => (
               <Days
-                className="font-bold text-lg inline md:block"
+                active={this.state.activeDay[key]}
+                className="font-bold text-lg inline md:block relative"
                 id={key}
-                onClick={(e) => {
-                  getDatePlan(key);
-                  changeColor(e.target.id);
+                onClick={e => {
+                  getDatePlan(key)
+                  changeColor(e.target.id)
                 }}
               >
+                <InderLine
+                  className=" w-3/4 absolute bottom-2"
+                  active={this.state.activeDay[key]}
+                ></InderLine>
                 DAY {key + 1}
               </Days>
             ))}
