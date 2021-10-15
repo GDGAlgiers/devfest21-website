@@ -46,24 +46,28 @@ class Agenda extends Component {
     const getDatePlan = key => {
       this.setState({ dayPlan: agendaData[key] })
     }
+    const changeColor = id =>{
+       const clickedElem = document.getElementById(id) ; 
+       
+    }
 
     return (
-      <AgendaSection className="grid grid-cols-12 gap-2 md:py-10  md:h-screen relative px-3 py-3">
-           <img
-            src={topBg}
-            className="absolute -top-12 right-0"
-            width="40%"
-          ></img>
+      <AgendaSection className="grid grid-cols-12 gap-2 md:py-10  md:h-screen relative pr-3 py-3">
+        <img src={topBg} className="absolute -top-12 right-0" width="40%"></img>
         <NavigationSidebar className="lg:p-8 md:pl-3 pt-6 md:col-span-3 col-span-12 relative w-full md:w-8/12 md:h-full h-32">
           <img
             src={devfestLogo}
-            className="absolute md:h-4/5  bottom-0 -left-5 hidden md:block"
+            className="absolute md:h-4/5  bottom-8 -left-5 hidden md:block"
           ></img>
           <DaysList className="bg-white p-3 absolute">
             {agendaData.map((elem, key) => (
               <Days
                 className="font-bold text-lg inline md:block"
-                onClick={() => getDatePlan(key)}
+                id={key}
+                onClick={(e) => {
+                  getDatePlan(key);
+                  changeColor(e.target.id);
+                }}
               >
                 DAY {key + 1}
               </Days>
@@ -71,12 +75,11 @@ class Agenda extends Component {
           </DaysList>
           <img
             src={networkingIcon}
-            className="absolute bottom-12 md:-right-8 -right-0 " 
+            className="absolute bottom-12 md:-right-8 -right-0 "
             width="70px"
           ></img>
         </NavigationSidebar>
         <SlidesSection className="md:col-span-9 col-span-11 relative">
-         
           <img
             src={bottomBg}
             className="absolute -bottom-32 -right-0"
@@ -84,11 +87,15 @@ class Agenda extends Component {
           ></img>
           <Slide className="p-2 absolute top-0 left-0 md:left-20 lg:left-42 md:top-12 md:w-9/12 w-full lg:w-8/12">
             <div className="bg-white py-4 w-full"></div>
-            <div className="bg-white mt-3"><DayEvents dayPlan={this.state.dayPlan} bgColor="white" /></div>
+            <div className="bg-white mt-3">
+              <DayEvents dayPlan={this.state.dayPlan} bgColor="white" />
+            </div>
           </Slide>
           <Slide className="p-2 absolute top-4 left-4 md:left-24 lg:left-46  md:top-16 md:w-9/12 w-full lg:w-8/12">
             <div className="bg-white py-4 "></div>
-            <div className="bg-white  mt-3 "><DayEvents dayPlan={this.state.dayPlan} bgColor="white"/></div>
+            <div className="bg-white  mt-3 ">
+              <DayEvents dayPlan={this.state.dayPlan} bgColor="white" />
+            </div>
           </Slide>
           <Slide className="p-2 absolute top-8 left-8 md:left-28 lg:left-50  md:top-20 md:w-9/12 w-full lg:w-8/12">
             <div className="bg-white grid grid-cols-2 px-2 py-1 mb-2">
@@ -98,7 +105,10 @@ class Agenda extends Component {
                 <img src={assetsIcon} className="mx-2" width="20px"></img>
               </div>
             </div>
-            <DayEvents dayPlan={this.state.dayPlan} bgColor = {colors.lightBlue}/>
+            <DayEvents
+              dayPlan={this.state.dayPlan}
+              bgColor={colors.lightBlue}
+            />
           </Slide>
         </SlidesSection>
       </AgendaSection>
