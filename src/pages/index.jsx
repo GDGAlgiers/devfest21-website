@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
 
@@ -22,21 +21,22 @@ const INDEX_SEO = {
         site_name: 'Devfest21 GDG Algiers',
     },
 }
-const { site } = useStaticQuery(
-    graphql`
-        query {
-            site {
-                siteMetadata {
-                    author
-                    keywords
-                    siteUrl
-                }
-            }
-        }
-    `
-)
 
 export default function Home() {
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        author
+                        keywords
+                        siteUrl
+                    }
+                }
+            }
+        `
+    )
+
     return (
         <Layout
             seo={{
