@@ -7,7 +7,7 @@
 module.exports = {
     siteMetadata: {
         title: `Devfest Algiers 21`,
-        description: `GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2020 in its 10th edition to offer speaker sessions, codelabs, workshops and a fascinating development challenges in all fields.`,
+        description: `GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2021 in its 10th edition to offer speaker sessions, codelabs, workshops and a big Hackathon for the participants to bring up some innovative solutions.`,
         author: `@GDG_Algiers`,
         siteUrl: 'https://devfest21.netlify.app',
         keywords: [
