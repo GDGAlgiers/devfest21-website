@@ -1,6 +1,5 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import Footer from "../components/Footer";
 
 
 
@@ -25,31 +24,10 @@ export default function Home() {
 
   return (
     <Container className="mt-10">
-
-    
      
       <Button>Normal Button</Button>
       <Button primary>Primary Button</Button>
       <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <h3 className="mt-10">Let The Hunt Begin</h3>
-      <Footer />
     
     </Container>
   )

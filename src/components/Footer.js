@@ -5,16 +5,16 @@ import devfestLogo from "../images/logo.png"
 // Icons
 import { AiFillTwitterCircle } from 'react-icons/Ai';
 
-import {FaFacebook,FaInstagram,FaTwitterSquare,FaYoutube} from 'react-icons/fa'
-import ScrollButton from "./ScrollButton";
+import {FaFacebook,FaInstagram,FaYoutube} from 'react-icons/fa'
+
 const Footer = () => {
    
     return ( 
         <div className="footer font-body .text-6xl w-full my-0 pt-4 pb-1 bg-primary text-white list-none text-lg mt-0 mb-0" >
-            <ScrollButton />
+        
            
             <img src={devfestLogo} alt="" className="m-auto h-14"/>
-            <ul  className="invisible h-0 md:h-5 flex md:visible justify-between  w-1/2 m-auto md:mt-6 ">
+            <ul  className="  md:flex  justify-between  w-1/2 m-auto mt-6 ">
                 <li><Link className="wt-6 " to="#about" >About</Link></li>
                 <li><Link className="wt-6" to="#event">Event</Link></li>
                 <li><Link className="wt-6" to="#speakers">Speakers</Link></li>
