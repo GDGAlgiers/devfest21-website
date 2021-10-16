@@ -72,9 +72,9 @@ class Agenda extends Component {
         ]
 
     return (
-      <AgendaSection className="grid grid-cols-12 gap-2 md:py-10  md:h-screen relative pr-3 py-3">
+      <AgendaSection className="grid grid-cols-12 gap-2 md:py-10  md:h-screen relative pr-3 py-3 ">
         <img src={topBg} className="absolute -top-12 right-0" width="40%"></img>
-        <NavigationSidebar className="lg:p-8 md:pl-3 pt-6 md:col-span-3 col-span-12 relative w-full md:w-8/12 md:h-full h-32 ml-1 ">
+        <NavigationSidebar className="lg:p-8 md:pl-3 pt-6 md:col-span-3 col-span-12 relative  md:w-8/12 md:h-5/6 h-32 ml-1 md:ml-0">
           <img
             src={devfestLogo}
             className="absolute md:h-4/5  bottom-8 -left-5 hidden md:block"
