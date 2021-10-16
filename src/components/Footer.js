@@ -10,7 +10,7 @@ import ScrollButton from "./ScrollButton";
 const Footer = () => {
    
     return ( 
-        <div className="footer font-body .text-6xl w-full my-0 pt-8 pb-1 bg-primary text-white list-none text-lg mt-0 mb-0" >
+        <div className="footer font-body .text-6xl w-full my-0 pt-4 pb-1 bg-primary text-white list-none text-lg mt-0 mb-0" >
             <ScrollButton />
            
             <img src={devfestLogo} alt="" className="m-auto h-14"/>

@@ -30,7 +30,7 @@ const scrollToTop = () =>{
 window.addEventListener('scroll', toggleVisible);
 
 return (
-    <button onClick={scrollToTop} style={{display: visible  ? 'inline' : 'none'}}><IoMdArrowDropupCircle className="sm:hidden text-6xl text-black fixed bottom-6 right-4"/></button>
+    <button onClick={scrollToTop} style={{display: visible  ? 'inline' : 'none'}}><IoMdArrowDropupCircle className="sm:hidden text-6xl text-black fixed bottom-4 right-4 z-50"/></button>
 
 );
 }
