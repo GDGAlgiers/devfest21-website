@@ -32,6 +32,14 @@ module.exports = {
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-next-seo`,
         `gatsby-plugin-offline`,
+        {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /\.inline\.svg$/,
+                },
+            },
+        },
         'gatsby-plugin-robots-txt',
         {
             resolve: 'gatsby-plugin-web-font-loader',
