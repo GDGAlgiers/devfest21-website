@@ -1,15 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const ImgDiv = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     position: relative;
     border: 2px solid #000;
     box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
-`;
-
+`
 
 const Speaker = ({ name, image }) => {
     return (
@@ -18,7 +17,7 @@ const Speaker = ({ name, image }) => {
                 <img src={image} alt={name} className="w-full h-full" />
             </ImgDiv>
         </div>
-    );
+    )
 }
 
-export default Speaker;
+export default Speaker
