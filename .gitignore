@@ -58,6 +58,10 @@ typings/
 .cache/
 public
 
+# teaser video 
+*.mp4
+*.ogg
+
 # Mac files
 .DS_Store
 
