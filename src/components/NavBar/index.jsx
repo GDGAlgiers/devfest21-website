@@ -5,8 +5,8 @@ import Navigations from '../../data/navbar'
 import RegisterButton from '../common/RegisterButton'
 import DevfestLogo from '../../images/logo.svg'
 
-const NavBar = () => (
-    <Disclosure as="nav" className="bg-blue">
+const NavBar = ({ navBarClass }) => (
+    <Disclosure as="nav" className={`${navBarClass ?? ''}`}>
         {({ open }) => (
             <>
                 <div className="flex-1 max-w-full px-4 sm:px-8 lg:px-8">

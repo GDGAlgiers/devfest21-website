@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
+import HeroSection from '../sections/HeroSection'
 
 const INDEX_SEO = {
     title: 'Home',
@@ -53,7 +54,7 @@ export default function Home() {
                 ...INDEX_SEO,
             }}
         >
-            <h1>Hello World</h1>
+            <HeroSection />
         </Layout>
     )
 }
