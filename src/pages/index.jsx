@@ -1,9 +1,70 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import Agenda from '../components/Agenda'
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 import '../styles/global.css'
+import WhatIsDevfest from '../sections/WhatIsDesvfest'
+import Layout from '../components/Layout'
+import Agenda from '../components/Agenda'
+import SpeakersSection from '../sections/speakersSection'
+import HeroSection from '../sections/HeroSection'
+import speakers from '../data/speakers.json'
+
+const INDEX_SEO = {
+    title: 'Home',
+    description:
+        'GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2021 in its 9th edition to offer speaker sessions, codelabs, workshops and an amazing Hackathon.',
+    openGraph: {
+        url: 'https://devfest21.netlify.app',
+        title: 'Devfest 21 Home',
+        description: 'Devfest21 event from GDG Algiers',
+        images: [
+            {
+                url: 'https://i.ibb.co/kQgBCJD/devfest-Card.png',
+                width: 800,
+                height: 600,
+                alt: 'devfest',
+            },
+        ],
+        site_name: 'Devfest21 GDG Algiers',
+    },
+}
+
 export default function Home() {
-  return (
-   <Agenda/>
-  )
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        author
+                        keywords
+                        siteUrl
+                    }
+                }
+            }
+        `
+    )
+
+    return (
+        <Layout
+            seo={{
+                twitter: {
+                    handle: site.siteMetadata.author,
+                    cardType: 'summary_large_image',
+                },
+                metaTags: [
+                    {
+                        property: 'keywords',
+                        content: site.siteMetadata.keywords.join(','),
+                    },
+                ],
+                ...INDEX_SEO,
+            }}
+        >
+            <HeroSection />
+            <Agenda />
+            <SpeakersSection speakers={speakers} />
+            <section id="about">
+                <WhatIsDevfest />
+            </section>
+        </Layout>
+    )
 }

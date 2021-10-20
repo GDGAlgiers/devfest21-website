@@ -20,13 +20,15 @@ module.exports = {
                 default: '#F9AB00',
             },
             blue: '#1C7EF0',
+            darkBlue: '#0053BA',
             teal: '#1CE9B6',
             gray: '#E1E2E7',
             grayDark: '#87888B',
             textColor: '#202124',
+            bleuDfest: '#046CE1',
         },
         fontFamily: {
-            sans: ['Roboto', 'Cairo', 'Open Sans', 'sans-serif'],
+            sans: ['Roboto Mono', 'Cairo', 'Open Sans', 'sans-serif'],
         },
         textIndent: {
             // defaults to {}
