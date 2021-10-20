@@ -1,0 +1,491 @@
+{
+    "type": "DevFestLocations",
+    "devfests": [
+        {
+            "text": "ALG",
+            "size": 1.0,
+            "lat": "36.779936",
+            "lng": "3.074799"
+        },
+        {
+            "text": "TIZI",
+            "size": 1.0,
+            "lat": "36.733725",
+            "lng": "4.011383"
+        },
+        {
+            "text": "TIARET",
+            "size": 1.0,
+            "lat": "35.409899",
+            "lng": "1.332092"
+        },
+        {
+            "text": "FR",
+            "size": 1.0,
+            "lat": "47.410665",
+            "lng": "2.609253"
+        },
+        {
+            "text": "FR2",
+            "size": 1.0,
+            "lat": "46.359487",
+            "lng": "2.444458"
+        },
+        {
+            "text": "SBA",
+            "size": 1.0,
+            "lat": "34.700589",
+            "lng": "0.429153"
+        },
+        {
+            "text": "MAROC",
+            "size": 1.0,
+            "lat": "34.232951",
+            "lng": "4.655457"
+        },
+        {
+            "text": "MAROC2",
+            "size": 1.0,
+            "lat": "31.931914",
+            "lng": "-6.654968"
+        },
+        {
+            "lat": -11.18333,
+            "lng": 38.43333,
+            "text": "Sengwa",
+            "size": 1.0
+        },
+        {
+            "lat": 4.76667,
+            "lng": 11.7,
+            "text": "Ngila",
+            "size": 1.0
+        },
+        {
+            "lat": 66.2585,
+            "lng": -15.73268,
+            "text": "Vi\u00f0ines\u00e1",
+            "size": 1.0
+        },
+        {
+            "lat": 34.231483,
+            "lng": -3.042903,
+            "text": "Oued el Ersal",
+            "size": 1.0
+        },
+        {
+            "lat": 66.28062,
+            "lng": -148.7444,
+            "text": "Clochacohua Lake",
+            "size": 1.0
+        },
+        {
+            "lat": 55.23333,
+            "lng": -161.43333,
+            "text": "Nikolaief (historical)",
+            "size": 1.0
+        },
+        {
+            "lat": 53.58927,
+            "lng": 35.429,
+            "text": "Gusakovskiy",
+            "size": 1.0
+        },
+        {
+            "lat": 56.99987,
+            "lng": 86.14393,
+            "text": "Asino",
+            "size": 1.0
+        },
+        {
+            "lat": -0.21667,
+            "lng": 112.18333,
+            "text": "Sambuk",
+            "size": 1.0
+        },
+        {
+            "lat": 54.58333,
+            "lng": 124.71667,
+            "text": "Talakten",
+            "size": 1.0
+        },
+        {
+            "lat": 29.858955,
+            "lng": 30.805462,
+            "text": "Gebel Le\u1e25fi",
+            "size": 1.0
+        },
+        {
+            "lat": -19.55,
+            "lng": -60.1,
+            "text": "Cerro Cristian",
+            "size": 1.0
+        },
+        {
+            "lat": 58.29,
+            "lng": 22.21573,
+            "text": "Kaerla",
+            "size": 1.0
+        },
+        {
+            "lat": -27.64105,
+            "lng": -52.63264,
+            "text": "Cruzaltense",
+            "size": 1.0
+        },
+        {
+            "lat": -1.01667,
+            "lng": -50.01667,
+            "text": "Igarap\u00e9 Puru",
+            "size": 1.0
+        },
+        {
+            "lat": 39.74,
+            "lng": 64.17944,
+            "text": "Jondor",
+            "size": 1.0
+        },
+        {
+            "lat": 66.485435,
+            "lng": 149.903815,
+            "text": "Byutyay",
+            "size": 1.0
+        },
+        {
+            "lat": 32.9923,
+            "lng": 48.1249,
+            "text": "Tang-e Sistan",
+            "size": 1.0
+        },
+        {
+            "lat": 27.92667,
+            "lng": 51.41944,
+            "text": "Jaz\u012breh-ye Omm S\u012bleh",
+            "size": 1.0
+        },
+        {
+            "lat": -18.13333,
+            "lng": 20.96667,
+            "text": "Cwa",
+            "size": 1.0
+        },
+        {
+            "lat": -25.16611,
+            "lng": -57.48562,
+            "text": "Limpio",
+            "size": 1.0
+        },
+        {
+            "lat": 42.75,
+            "lng": 97.61667,
+            "text": "Denjiyn Tasarhay Tolgoy",
+            "size": 1.0
+        },
+        {
+            "lat": 1.92116,
+            "lng": 39.19777,
+            "text": "Derera Gof",
+            "size": 1.0
+        },
+        {
+            "lat": 53.87361,
+            "lng": -166.53667,
+            "text": "Unalaska",
+            "size": 1.0
+        },
+        {
+            "lat": -4.816667,
+            "lng": -54.25,
+            "text": "Ouro Pr\u00eato",
+            "size": 1.0
+        },
+        {
+            "lat": 74.683333,
+            "lng": -18.883333,
+            "text": "Kap Neumayer",
+            "size": 1.0
+        },
+        {
+            "lat": -12.2,
+            "lng": -40.216667,
+            "text": "Todos-os-Santos",
+            "size": 1.0
+        },
+        {
+            "lat": 29.558611,
+            "lng": -5.500278,
+            "text": "Hassi Melah",
+            "size": 1.0
+        },
+        {
+            "lat": 9.944984,
+            "lng": 99.990125,
+            "text": "Sail Rock",
+            "size": 1.0
+        },
+        {
+            "lat": -31.21658,
+            "lng": 147.11894,
+            "text": "Gunningbar Creek",
+            "size": 1.0
+        },
+        {
+            "lat": -66.06667,
+            "lng": 101.03333,
+            "text": "Flagman Island",
+            "size": 1.0
+        },
+        {
+            "lat": 64.81667,
+            "lng": 67.08333,
+            "text": "Azyal-Gort",
+            "size": 1.0
+        },
+        {
+            "lat": -29.74686,
+            "lng": 147.76643,
+            "text": "Cumborah",
+            "size": 1.0
+        },
+        {
+            "lat": 75.36698,
+            "lng": -92.40549,
+            "text": "Macormick Bay",
+            "size": 1.0
+        },
+        {
+            "lat": 41.11667,
+            "lng": 64.71667,
+            "text": "Manamdzhan",
+            "size": 1.0
+        },
+        {
+            "lat": 64.93722,
+            "lng": 119.94917,
+            "text": "Khorgochchuma",
+            "size": 1.0
+        },
+        {
+            "lat": -8.57848,
+            "lng": 13.66425,
+            "text": "Caxito",
+            "size": 1.0
+        },
+        {
+            "lat": 52.53347,
+            "lng": -70.78226,
+            "text": "Rivi\u00e8re des Quatre-Temps",
+            "size": 1.0
+        },
+        {
+            "lat": 79.26866,
+            "lng": -88.75012,
+            "text": "Strand Fiord Pass",
+            "size": 1.0
+        },
+        {
+            "lat": -21.31667,
+            "lng": -56.21667,
+            "text": "Turuma",
+            "size": 1.0
+        },
+        {
+            "lat": 53.85005,
+            "lng": -106.73388,
+            "text": "Kiyam Lake",
+            "size": 1.0
+        },
+        {
+            "lat": 47.76817,
+            "lng": 29.01,
+            "text": "Ribnita",
+            "size": 1.0
+        },
+        {
+            "lat": 4.416667,
+            "lng": -68.3,
+            "text": "Cano Mataven",
+            "size": 1.0
+        },
+        {
+            "lat": 25.0,
+            "lng": 29.0,
+            "text": "Waadi el Rakhaa",
+            "size": 1.0
+        },
+        {
+            "lat": -27.37808,
+            "lng": 31.61904,
+            "text": "Pongola",
+            "size": 1.0
+        },
+        {
+            "lat": 46.19695,
+            "lng": -59.95698,
+            "text": "Glace Bay",
+            "size": 1.0
+        },
+        {
+            "lat": 26.1,
+            "lng": 100.95,
+            "text": "Tiesuo",
+            "size": 1.0
+        },
+        {
+            "lat": 55.73158,
+            "lng": 122.72041,
+            "text": "Lopcha",
+            "size": 1.0
+        },
+        {
+            "lat": -12.78339,
+            "lng": -70.95383,
+            "text": "Amarakaeri Communal Reserve",
+            "size": 1.0
+        },
+        {
+            "lat": 57.25363,
+            "lng": 41.10849,
+            "text": "Furmanov",
+            "size": 1.0
+        },
+        {
+            "lat": 9.61667,
+            "lng": -63.3,
+            "text": "Moreno",
+            "size": 1.0
+        },
+        {
+            "lat": 46.82583,
+            "lng": 62.305,
+            "text": "Tokabay",
+            "size": 1.0
+        },
+        {
+            "lat": 21.91037,
+            "lng": 43.42869,
+            "text": "Bi\u2019r Wurshah",
+            "size": 1.0
+        },
+        {
+            "lat": 17.53211,
+            "lng": -8.131508,
+            "text": "Rhord Moussa",
+            "size": 1.0
+        },
+        {
+            "lat": 56.76667,
+            "lng": 135.98333,
+            "text": "Taksomakit",
+            "size": 1.0
+        },
+        {
+            "lat": 71.8,
+            "lng": 100.0,
+            "text": "Isayevskiy",
+            "size": 1.0
+        },
+        {
+            "lat": 50.11512,
+            "lng": -110.85697,
+            "text": "Redcliff",
+            "size": 1.0
+        },
+        {
+            "lat": 17.05439,
+            "lng": 79.26707,
+            "text": "Nalgonda",
+            "size": 1.0
+        },
+        {
+            "lat": 4.80078,
+            "lng": 26.46513,
+            "text": "Gapi",
+            "size": 1.0
+        },
+        {
+            "lat": -29.33064,
+            "lng": 120.8539,
+            "text": "Bankonly Dam",
+            "size": 1.0
+        },
+        {
+            "lat": 33.05,
+            "lng": 95.45,
+            "text": "Gyiza",
+            "size": 1.0
+        },
+        {
+            "lat": 69.02444,
+            "lng": -151.68528,
+            "text": "Niakogon Buttes",
+            "size": 1.0
+        },
+        {
+            "lat": -19.75,
+            "lng": -174.566667,
+            "text": "Miama",
+            "size": 1.0
+        },
+        {
+            "lat": 46.25834,
+            "lng": -102.05543,
+            "text": "Bentley",
+            "size": 1.0
+        },
+        {
+            "lat": 46.34651,
+            "lng": -87.38632,
+            "text": "K. I. Sawyer Air Force Base",
+            "size": 1.0
+        },
+        {
+            "lat": 59.03568,
+            "lng": 10.41775,
+            "text": "Velvika",
+            "size": 1.0
+        },
+        {
+            "lat": 47.30778,
+            "lng": 31.78506,
+            "text": "Nova Odesa",
+            "size": 1.0
+        },
+        {
+            "lat": 7.88261,
+            "lng": -3.69321,
+            "text": "Yakro",
+            "size": 1.0
+        },
+        {
+            "lat": -76.8,
+            "lng": -30.71667,
+            "text": "Cape Vahsel",
+            "size": 1.0
+        },
+        {
+            "lat": -29.76667,
+            "lng": -54.08333,
+            "text": "Angelo Saocal",
+            "size": 1.0
+        },
+        {
+            "lat": 44.31667,
+            "lng": 126.8,
+            "text": "Jishu",
+            "size": 1.0
+        },
+        {
+            "lat": 68.6999,
+            "lng": 75.3441,
+            "text": "Oz\u00ebra Ayvayakhakalyte",
+            "size": 1.0
+        },
+        {
+            "lat": -70.7,
+            "lng": -61.61667,
+            "text": "Luisoni, punta",
+            "size": 1.0
+        }
+    ]
+}
