@@ -4,6 +4,7 @@ import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
 import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
+import Footer from '../components/Footer'
 import speakers from '../data/speakers.json'
 
 const INDEX_SEO = {
@@ -62,6 +63,7 @@ export default function Home() {
             <section id="about">
                 <WhatIsDevfest />
             </section>
+            <Footer />
         </Layout>
     )
 }
