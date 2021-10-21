@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import '../styles/global.css'
 import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
+import Agenda from '../components/Agenda'
 import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
 import Footer from '../components/Footer'
@@ -59,6 +61,7 @@ export default function Home() {
             }}
         >
             <HeroSection />
+            <Agenda />
             <SpeakersSection speakers={speakers} />
             <section id="about">
                 <WhatIsDevfest />
