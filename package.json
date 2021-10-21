@@ -21,6 +21,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.1",
+    "swiper": "^7.0.8",
     "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
@@ -28,9 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-hello-world.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-hello-world#readme",
+  "main": "gatsby-browser.js",
+  "keywords": [],
+  "author": ""
 }
