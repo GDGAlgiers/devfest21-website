@@ -9,25 +9,25 @@ import EarthIcon from '../../images/earth-icon.png'
 
 const SponsorsSection = () => {
     return (
-        <section className="h-screen w-full relative pt-4">
+        <section className="h-screen w-full relative pl-4 pt-6">
             <div className="font-robotoMono">
-                <h2 className="text-2xl lg:text-6xl font-bol ml-2 lg:ml-14 " style={{color: "#046CE1"}}>Sponsor</h2>
-                <h3 className="text-sm lg:text-3xl ml-2 lg:ml-14 mt-3">Thank you for sponsoring us!</h3>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bol ml-2 lg:ml-14 " style={{color: "#046CE1"}}>Sponsor</h2>
+                <h3 className="text-md sm:text-xl md:text-2xl lg:text-3xl ml-2 lg:ml-14 mt-3">Thank you for sponsoring us!</h3>
             </div>
-            <div className="z-0">
-                <div style={{backgroundColor: "#3D8DF5", width: "20%"}} className="h-full absolute right-0 top-0 border-black border-2 lg:border-4 ">
+            <div className="z-0 hidden lg:block md:block">
+                <div style={{backgroundColor: "#3D8DF5", width: "20%"}} className="h-full absolute right-0 top-0 border-black border-4 ">
                     <div className="relative">
-                        <div className="rounded-full bg-white border-black border-2 lg:border-4 h-12 w-12 lg:h-28 lg:w-28 flex justify-center items-center absolute -left-6 lg:-left-14 top-2 lg:top-20">
+                        <div className="rounded-full border-black border-4 h-28 w-28 flex justify-center items-center absolute -left-14 top-20 bg-white-default">
                             <img src={EarthIcon} alt="" style={{height: "60%", width: "60%"}}/>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex z-10 absolute flex-col lg:flex-row ml-12 sm:ml-20">
+            <div className="flex z-10 absolute flex-col lg:flex-row md:ml-12 p-4">
                     <SponsorsCard margin="lg:mt-28 mt-8" imageSrc={GithubImage} imageAlt="Github logo"/>
                     <SponsorsCard margin="lg:mt-16 mt-8" imageSrc={SamsungImage} imageAlt="Samsung logo"/>
                     <SponsorsCard margin="lg:mt-28 mt-8" imageSrc={GoogleImage} imageAlt="Google logo"/>
-                </div>
+            </div>
                 <div className=" absolute top-1/2 left-12 pt-16 text-xs w-2/6 z-20 text-darkBlue overflow-y-hidden">
                     <Typewriter
                         className="w-full "
