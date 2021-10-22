@@ -4,6 +4,7 @@ import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
 import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
+import GdgWtmSection from '../sections/GdgWtmSection'
 import Footer from '../components/Footer'
 import speakers from '../data/speakers.json'
 
@@ -58,12 +59,13 @@ export default function Home() {
                 ...INDEX_SEO,
             }}
         >
+            
             <HeroSection />
+            <WhatIsDevfest /> 
+            <GdgWtmSection />
             <SpeakersSection speakers={speakers} />
-            <section id="about">
-                <WhatIsDevfest />
-            </section>
             <Footer />
+             
         </Layout>
     )
 }
