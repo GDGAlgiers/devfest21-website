@@ -6,7 +6,7 @@ const SEO = (props) => (
         {...props}
         // eslint-disable-next-line react/destructuring-assignment
         language={props.language ?? 'en'}
-        titleTemplate="%s | GDG Algiers' Devfest2 "
+        titleTemplate="%s | GDG Algiers' Devfest21"
     />
 )
 export default SEO

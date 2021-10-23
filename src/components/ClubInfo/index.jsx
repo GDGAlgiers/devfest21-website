@@ -99,7 +99,7 @@ export default function ClubInfo({ logo, title, website, text }) {
                     />
                 </Icons>
             </Header>
-            <Content className="px-5">
+            <Content className="px-4 md:px-6">
                 <Club>
                     <ClubLogo src={Logo.default} alt="LOGO" />
                 </Club>

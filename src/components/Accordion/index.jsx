@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useRef, useState } from 'react'
+import { FaChevronDown } from 'react-icons/fa'
 import styled from 'styled-components'
 
 const QstDiv = styled.div`
@@ -24,33 +25,23 @@ export default function Accordion({ title, content }) {
         )
     }
     return (
-        <QstDiv className="z-10 py-2 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+        <QstDiv className="flex flex-col m-5 bg-white-default border-8  border-bleuDfest">
             <button
                 type="button"
-                className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
+                className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between px-2 md:px-4"
                 onClick={toggleAccordion}
             >
-                <p className="inline-block font-extrabold text-footnote md:text-4xl text-2xl light pl-4 md:pl-10">
+                <h1 className="text-left inline-block font-extrabold  text-footnote light md:pl-4 md:text-3xl text-2xl">
                     {title}
-                </p>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`h-12 w-12 mr-7 ${rotate} inline-block`}
-                    viewBox="0 0 20 20"
-                >
-                    <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                    />
-                </svg>
+                </h1>
+                <FaChevronDown className="flex-shrink-0" style={{fontSize: '16px'}} />
             </button>
             <div
                 ref={contentSpace}
                 style={{ maxHeight: `${height}` }}
-                className="overflow-auto md:text-3xl text-2xl text-left transition-max-height duration-700 ease-in-out"
+                className="text-left overflow-y-hidden md:text-3xl text-2xl transition-max-height duration-700 ease-in-out"
             >
-                <div className="pb-10 pl-32">{content}</div>
+                <div className="pb-10 px-4 md:px-10">{content}</div>
             </div>
         </QstDiv>
     )
