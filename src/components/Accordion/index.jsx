@@ -2,6 +2,11 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
+const QstDiv = styled.div`
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+`
+
 export default function Accordion({ title, content }) {
     const [active, setActive] = useState(false)
     const [height, setHeight] = useState('0px')
@@ -18,9 +23,7 @@ export default function Accordion({ title, content }) {
                 : 'transform duration-700 ease rotate-180'
         )
     }
-    const QstDiv = styled.div`
-        box-shadow: 8px 8px rgba(0, 83, 186, 1);
-    `
+  
     return (
         <QstDiv className="flex flex-col m-5 bg-white-default border-8  border-bleuDfest">
             <button

@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import devfestLogo from '../../images/logo.svg'
@@ -9,33 +8,36 @@ const Footer = () => {
             <img src={devfestLogo} alt="Devfest Logo" className="m-auto h-14" />
             <ul className="flex justify-between  m-auto mt-6 w-2/3 md:w-1/4 lg:w-1/4 xl:w-1/4">
                 <li>
-                    <Link
+                    <a
                         target="_blank"
-                        to="https://web.facebook.com/GDGAlgiers"
+                        href="https://web.facebook.com/GDGAlgiers"
+                        rel="noreferrer"
                     >
                         <FaFacebook className="text-3xl" />
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link
+                    <a
                         target="_blank"
-                        to="https://www.instagram.com/gdg_algiers/"
+                        href="https://www.instagram.com/gdg_algiers/"
+                        rel="noreferrer"
                     >
                         <FaInstagram className="text-3xl" />
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link target="_blank" to="https://twitter.com/gdg_algiers">
+                    <a target="_blank" href="https://twitter.com/gdg_algiers" rel="noreferrer">
                         <FaTwitter className="text-3xl" />
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link
+                    <a
                         target="_blank"
-                        to="https://www.youtube.com/channel/UCoIJqAgLunK3MJLgf28W5hg"
+                        href="https://www.youtube.com/channel/UCoIJqAgLunK3MJLgf28W5hg"
+                        rel="noreferrer"
                     >
                         <FaYoutube className="text-3xl" />
-                    </Link>
+                    </a>
                 </li>
             </ul>
             <p className="text-sm text-center mt-6">

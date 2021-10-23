@@ -6,15 +6,16 @@ import Accordion from '../../components/Accordion'
 import QuestionMark from '../../images/QuestionMark.svg'
 import FaqLogo from '../../images/logo.svg'
 
+const FaqDiv = styled.div`
+    font-family: Roboto Mono;
+    background-color: #1c7ef0;
+    z-index: -2;
+`
+const Title = styled.div`
+    -webkit-text-stroke: 2px black;
+`
+
 export default function Faq() {
-    const FaqDiv = styled.div`
-        font-family: Roboto Mono;
-        background-color: #1c7ef0;
-        z-index: -2;
-    `
-    const Title = styled.div`
-        -webkit-text-stroke: 2px black;
-    `
     return (
         <FaqDiv
             style={{ zIndex: '20' }}
@@ -39,7 +40,7 @@ export default function Faq() {
             />
             <div>
                 {questions.map((qst) => {
-                    return <Accordion title={qst.title} content={qst.content} />
+                return <Accordion title={qst.title} key={qst.id} content={qst.content} />
                 })}
             </div>
         </FaqDiv>
