@@ -4,7 +4,7 @@ import NavBar from '../../components/NavBar'
 import BitsImage from '../../images/bits.png'
 import DevfestLogo from '../../images/logo.svg'
 import DevfestGlobe from '../../components/DevFestGlob'
-import RegisterButton from '../../components/common/RegisterButton'
+import SubscribeButton from '../../components/common/SubscribeButton'
 import Countdown from '../../components/Countdown'
 
 const HeroSection = () => (
@@ -103,7 +103,7 @@ const HeroSection = () => (
                         />
                     </div>
                     <div className=" pt-0 lg:pt-14 flex justify-start lg:justify-center">
-                        <RegisterButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28 " />
+                        <SubscribeButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28 " />
                     </div>
                 </div>
                 <div className="w-3/5 hidden lg:block ">
