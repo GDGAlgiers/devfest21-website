@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import WhatIsDevfest from '../sections/WhatIsDesvfest'
@@ -7,6 +8,7 @@ import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
 import Footer from '../components/Footer'
 import speakers from '../data/speakers.json'
+import Faq from '../sections/Faq'
 
 const INDEX_SEO = {
     title: 'Home',
@@ -63,6 +65,7 @@ export default function Home() {
             <WhatIsDevfest />
             <GdgWtmSection />
             <SpeakersSection speakers={speakers} />
+            <Faq />
             <Footer />
         </Layout>
     )
