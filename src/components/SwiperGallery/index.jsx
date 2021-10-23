@@ -1,13 +1,8 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+/* eslint-disable import/no-dynamic-require */
+import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, {
-    Navigation,
-    Pagination,
-
-    Autoplay,
-    EffectCoverflow,
-} from 'swiper'
+import { graphql, useStaticQuery } from 'gatsby'
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import './styles.css'
@@ -15,82 +10,69 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 
-SwiperCore.use([Navigation, Pagination, Autoplay, EffectCoverflow])
-
-const SwiperGallery = () => {
-    const Container = styled.div`
-        text-align: start;
-        //justify-content: start;
-        margin: 0px;
-        background-color: color;
-        padding: 20px;
-
-        background-color: ${(props) => props.primary};
-        ${(props) =>
-            props.maincontainer &&
-            css`
-                width: 60%;
-            `}
-        ${(props) =>
-            props.info &&
-            css`
-                word-spacing: 9999rem;
-            `}
-    ${(props) => props.secondcontainer && css``}
-    `
-    const slides = []
-    for (let i = 0; i < 5; i += 1) {
-        slides.push(
-            <SwiperSlide key={`slide-${i}`}>
-                {({ isActive }) => (
-                    <img
-                        className={
-                            isActive
-                                ? 'curslide-seleced'
-                                : 'curslide-unselected'
+const SwiperGallery = ({ pictures, onSwipeChanged }) => {
+    const data = useStaticQuery(graphql`
+        query {
+            images: allFile(filter: { relativeDirectory: { eq: "Albums" } }) {
+                edges {
+                    node {
+                        relativePath
+                        extension
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 600) {
+                                ...GatsbyImageSharpFluid
+                            }
                         }
-                        src={`https://picsum.photos/id/${i + 1}/500/300`}
-                        alt={`Slide ${i}`}
-                    />
-                )}
-            </SwiperSlide>
-        )
-    }
-    return (
-        <Container>
-            <Container className="m-0 p-0 sm:grid md:flex justify-start">
-                <Swiper
-                    direction="vertical"
-                    spaceBetween={30}
-                    slidesPerView={1.75}
-                    activeIndex="2"
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    centeredSlides
-                    scrollbar={{ draggable: true }}
-                    modules={[Navigation, Pagination]}
-                    pagination={{
-                        clickable: true,
-                        el: '.swiper-pagination.left,.swiper-pagination.right',
-                    }}
-                    onInit={(swiper) =>
-                        console.log('Swiper initialized!', swiper)
                     }
-                    onSlideChange={(swiper) => {
-                        console.log(
-                            'Slide index dekka changed to: ',
-                            swiper.activeIndex
-                        )
-                    }}
-                    onReachEnd={() => console.log('Swiper end reached')}
-                >
-                    {slides}
-                </Swiper>
-                <Container className="swiper-pagination left p-2 border-2 border-black flex md:flex-col sm:grid justify-start gap-5" />
-            </Container>
-        </Container>
+                }
+            }
+        }
+    `)
+    const swiperRef = useRef(null)
+
+    return (
+        <Swiper
+            ref={swiperRef}
+            direction="vertical"
+            spaceBetween={20}
+            modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+            slidesPerView={1.75}
+            className="h-full"
+            activeIndex="2"
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            centeredSlides
+            scrollbar={{ draggable: true }}
+            pagination={{
+                clickable: true,
+                el: '.swiper-pagination.left,.swiper-pagination.right',
+            }}
+            onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+            onSlideChange={(swiper) => {
+                onSwipeChanged(swiper.activeIndex)
+            }}
+            onReachEnd={() => console.log('Swiper end reached')}
+        >
+            {data.images.edges.map((image, index) => (
+                <SwiperSlide key={`slide-${index.toString()}`}>
+                    {({ isActive }) => (
+                        <img
+                            className={
+                                isActive
+                                    ? 'curslide-seleced'
+                                    : 'curslide-unselected'
+                            }
+                            // eslint-disable-next-line global-require
+                            src={image.node.publicURL}
+                            alt={`Slide ${index}`}
+                        />
+                    )}
+                </SwiperSlide>
+            ))}
+        </Swiper>
     )
 }
 

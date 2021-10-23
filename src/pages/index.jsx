@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 // import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
-import StatsSection from '../sections/StatsSection'
+import HistorySection from '../sections/HistorySection'
 import Footer from '../components/Footer'
 // import speakers from '../data/speakers.json'
 
@@ -63,8 +63,7 @@ export default function Home() {
             <HeroSection />
             <WhatIsDevfest />
             <GdgWtmSection />
-            {/* <SpeakersSection speakers={speakers} /> */}
-            <StatsSection />
+            <HistorySection />
             <Footer />
         </Layout>
     )

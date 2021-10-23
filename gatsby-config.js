@@ -29,6 +29,8 @@ module.exports = {
     plugins: [
         `gatsby-plugin-postcss`,
         `gatsby-plugin-netlify`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-next-seo`,
         `gatsby-plugin-offline`,
