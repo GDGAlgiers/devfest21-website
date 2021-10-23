@@ -24,6 +24,7 @@ module.exports = {
             'Machine Learning',
             'Information',
         ],
+        image: 'https://i.ibb.co/1vRR8nD/Devfest21-1.png',
     },
     /* Your site config here */
     plugins: [

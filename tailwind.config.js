@@ -205,6 +205,7 @@ module.exports = {
         fontVariantNumeric: ['responsive'],
         fontVariantLigatures: ['responsive'],
         textRendering: ['responsive'],
+        animation: ['group-hover'],
     },
     plugins: [
         // eslint-disable-next-line global-require
