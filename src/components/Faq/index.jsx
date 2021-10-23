@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import questions from '../../data/questions'
 import Accordion from './Accordion'
 import QuestionMark from '../../images/QuestionMark.svg'
+import FaqLogo from '../../images/logo.svg'
 
 export default function Faq() {
     const FaqDiv = styled.div`
@@ -14,21 +15,27 @@ export default function Faq() {
         -webkit-text-stroke: 2px black;
     `
     return (
-        <FaqDiv className=" max-w-screen overflow-hidden relative text-center py-10 px-32 font-body">
+        <FaqDiv className=" max-w-screen overflow-hidden relative text-center py-10 lg:px-32 md:px-10 sm:px-5  font-body">
             <Title className=" text-6xl font-black text-white-default">
                 FAQ
             </Title>
-            <div className="z-10">
+            <img
+                src={QuestionMark}
+                alt=""
+                className="absolute -right-20 lg:-right-52 top-10 hidden md:block md:w-52 lg:w-96"
+                width="350px"
+            />
+
+            <img
+                src={FaqLogo}
+                alt=""
+                className="absolute left-10 top-10 hidden sm:block sm:w-48 lg:w-64"
+            />
+            <div className="z-50">
                 {questions.map((qst) => {
                     return <Accordion title={qst.title} content={qst.content} />
                 })}
             </div>
-            <img
-                src={QuestionMark}
-                alt=""
-                className="z-0 absolute -right-52 top-10 "
-                width="350px"
-            />
         </FaqDiv>
     )
 }

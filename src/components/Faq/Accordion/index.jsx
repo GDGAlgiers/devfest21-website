@@ -20,9 +20,10 @@ export default function Accordion({ title, content }) {
     }
     const QstDiv = styled.div`
         box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+        z-index: 100;
     `
     return (
-        <QstDiv className="z-10 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+        <QstDiv className="flex flex-col m-5 bg-white-default border-8  border-darkBlue">
             <button
                 type="button"
                 className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
