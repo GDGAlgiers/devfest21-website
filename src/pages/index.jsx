@@ -38,6 +38,7 @@ export default function Home() {
                         author
                         keywords
                         siteUrl
+                        image
                     }
                 }
             }
@@ -56,6 +57,33 @@ export default function Home() {
                         property: 'keywords',
                         content: site.siteMetadata.keywords.join(','),
                     },
+                    {
+                        property: 'og:type',
+                        content: 'website',
+                      },
+                      {
+                        property: 'og:image',
+                        content: site.siteMetadata.image,
+                      },
+                      {
+                        hid: 'og-title',
+                        property: 'og:title',
+                        content: 'Devfest 21 Home',
+                      },
+                      {
+                        property: 'og:description',
+                        content: '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
+                      },
+                      {
+                        hid: 'tw-title',
+                        property: 'twitter:title',
+                        content: 'Devfest 21 Home',
+                      },
+                      {
+                        hid: 'tw-desc',
+                        property: 'twitter:description',
+                        content: '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
+                      },
                 ],
                 ...INDEX_SEO,
             }}
