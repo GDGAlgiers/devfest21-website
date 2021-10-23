@@ -15,25 +15,29 @@ export default function Faq() {
         -webkit-text-stroke: 2px black;
     `
     return (
-        <FaqDiv className=" max-w-screen overflow-hidden relative text-center py-10 lg:px-32 md:px-10 sm:px-5  font-body">
+        <FaqDiv className="z-0 max-w-screen overflow-hidden relative text-center py-10 lg:px-32 md:px-10 sm:px-5  font-body">
             <Title className=" text-6xl font-black text-white-default">
                 FAQ
             </Title>
             <img
                 src={QuestionMark}
-                alt=""
-                className="absolute -right-20 lg:-right-52 top-10 hidden md:block md:w-52 lg:w-96"
+                alt="?"
+                style={{ zIndex: '-20' }}
+                className="z-0 absolute -right-20 lg:-right-52 top-10 hidden md:block md:w-52 lg:w-96"
                 width="350px"
             />
 
             <img
                 src={FaqLogo}
-                alt=""
-                className="absolute left-10 top-10 hidden sm:block sm:w-48 lg:w-64"
+                alt="devfest logo"
+                style={{ zIndex: '-20' }}
+                className="z-0 absolute left-10 top-10 hidden sm:block sm:w-48 lg:w-64"
             />
-            {questions.map((qst) => {
-                return <Accordion title={qst.title} content={qst.content} />
-            })}
+            <div className="z-10">
+                {questions.map((qst) => {
+                    return <Accordion title={qst.title} content={qst.content} />
+                })}
+            </div>
         </FaqDiv>
     )
 }
