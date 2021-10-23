@@ -3,11 +3,9 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
-import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
 import Footer from '../components/Footer'
-import speakers from '../data/speakers.json'
 import Faq from '../sections/Faq'
 
 const INDEX_SEO = {
@@ -65,7 +63,6 @@ export default function Home() {
             <HeroSection />
             <WhatIsDevfest />
             <GdgWtmSection />
-            <SpeakersSection speakers={speakers} />
             <Faq />
             <Footer />
         </Layout>
