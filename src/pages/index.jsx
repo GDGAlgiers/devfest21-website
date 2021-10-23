@@ -1,0 +1,72 @@
+/* eslint-disable prettier/prettier */
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import WhatIsDevfest from '../sections/WhatIsDesvfest'
+import Layout from '../components/Layout'
+import SpeakersSection from '../sections/speakersSection'
+import HeroSection from '../sections/HeroSection'
+import GdgWtmSection from '../sections/GdgWtmSection'
+import Footer from '../components/Footer'
+import speakers from '../data/speakers.json'
+import Faq from '../components/Faq'
+
+const INDEX_SEO = {
+    title: 'Home',
+    description:
+        'GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2021 in its 9th edition to offer speaker sessions, codelabs, workshops and an amazing Hackathon.',
+    openGraph: {
+        url: 'https://devfest21.netlify.app',
+        title: 'Devfest 21 Home',
+        description: 'Devfest21 event from GDG Algiers',
+        images: [
+            {
+                url: 'https://i.ibb.co/kQgBCJD/devfest-Card.png',
+                width: 800,
+                height: 600,
+                alt: 'devfest',
+            },
+        ],
+        site_name: 'Devfest21 GDG Algiers',
+    },
+}
+
+export default function Home() {
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        author
+                        keywords
+                        siteUrl
+                    }
+                }
+            }
+        `
+    )
+
+    return (
+        <Layout
+            seo={{
+                twitter: {
+                    handle: site.siteMetadata.author,
+                    cardType: 'summary_large_image',
+                },
+                metaTags: [
+                    {
+                        property: 'keywords',
+                        content: site.siteMetadata.keywords.join(','),
+                    },
+                ],
+                ...INDEX_SEO,
+            }}
+        >
+            <HeroSection />
+            <WhatIsDevfest />
+            <GdgWtmSection />
+            {/* <SpeakersSection speakers={speakers} /> */}
+            <Faq />
+            <Footer />
+        </Layout>
+    )
+}

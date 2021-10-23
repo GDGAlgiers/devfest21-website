@@ -1,50 +1,55 @@
-import React, { Component } from 'react';
+/* eslint-disable prettier/prettier */
+import React, { useRef, useState } from 'react'
+import styled from 'styled-components'
 
-class Accordion extends Component {
+export default function Accordion({ title, content }) {
+    const [active, setActive] = useState(false)
+    const [height, setHeight] = useState('0px')
+    const [rotate, setRotate] = useState('transform duration-700 ease')
 
-    constructor(props){
-        super(props);
-        this.state={
-            active: false,
-            height: '0px',
-            rotate: 'transform duration-700 ease'
-        }
+    const contentSpace = useRef(null)
+
+    function toggleAccordion() {
+        setActive(active === false)
+        setHeight(active ? '0px' : `${contentSpace.current.scrollHeight}px`)
+        setRotate(
+            active
+                ? 'transform duration-700 ease'
+                : 'transform duration-700 ease rotate-180'
+        )
     }
-    _contentSpace = useRef(null);
-    get contentSpace() {
-        return this._contentSpace;
-    }
-    set contentSpace(value) {
-        this._contentSpace = value;
-    }
-    toggleAccordion() {
-        const active=this.state.active;
-    this.setState({
-         active: !active,
-         height: active ? '0px':`${contentSpace.current.scrollHeight}px`,
-         rotate: active ? 'transform duration-700 ease' : 'transform duration-700 ease rotate-180',
-        })
-    }
-    render() {
-        return (
-            <div className="flex flex-col">
-                <button
-                    className="py-6 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
-                    onClick={this.toggleAccordion}
+    const QstDiv = styled.div`
+        box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+    `
+    return (
+        <QstDiv className="z-10 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+            <button
+                type="button"
+                className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
+                onClick={toggleAccordion}
+            >
+                <p className="inline-block font-extrabold text-footnote text-4xl light pl-32">
+                    {title}
+                </p>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`h-20 w-20 mr-7 ${rotate} inline-block`}
+                    viewBox="0 0 20 20"
                 >
-                    <p className="inline-block text-footnote light">{this.props.title}</p>
-                    <i className={"fas fa-chevron-down mt-1 "+`${this.state.rotate} inline-block`}></i>
-                </button>
-                <div
-                    ref={contentSpace()}
-                    style={{ maxHeight: `${this.state.height}` }}
-                    className="overflow-hidden transition-max-height duration-700 ease-in-out"
-                >
-                    <div className="pb-10">{this.props.content}</div>
-                </div>
+                    <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                </svg>
+            </button>
+            <div
+                ref={contentSpace}
+                style={{ maxHeight: `${height}` }}
+                className="overflow-auto text-3xl text-left transition-max-height duration-700 ease-in-out"
+            >
+                <div className="pb-10 pl-32">{content}</div>
             </div>
-        );
-    }
+        </QstDiv>
+    )
 }
-
-export default Accordion;
