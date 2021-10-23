@@ -23,19 +23,20 @@ export default function Accordion({ title, content }) {
                 : 'transform duration-700 ease rotate-180'
         )
     }
+  
     return (
-        <QstDiv className="z-10 py-2 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+        <QstDiv className="flex flex-col m-5 bg-white-default border-8  border-bleuDfest">
             <button
                 type="button"
                 className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
                 onClick={toggleAccordion}
             >
-                <p className="inline-block font-extrabold text-footnote md:text-4xl text-2xl light pl-4 md:pl-10">
+                <p className="inline-block font-extrabold text-footnote md:text-4xl text-2xl light px-4 md:px-10">
                     {title}
                 </p>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-12 w-12 mr-7 ${rotate} inline-block`}
+                    className={`${rotate} fill-current text-darkBlue h-20 w-20 mr-7 inline-block`}
                     viewBox="0 0 20 20"
                 >
                     <path
@@ -48,9 +49,9 @@ export default function Accordion({ title, content }) {
             <div
                 ref={contentSpace}
                 style={{ maxHeight: `${height}` }}
-                className="overflow-auto md:text-3xl text-2xl text-left transition-max-height duration-700 ease-in-out"
+                className=" overflow-y-hidden md:text-3xl text-2xl text-left transition-max-height duration-700 ease-in-out"
             >
-                <div className="pb-10 pl-32">{content}</div>
+                <div className="pb-10 px-4 md:px-10">{content}</div>
             </div>
         </QstDiv>
     )

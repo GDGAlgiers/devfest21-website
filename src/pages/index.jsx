@@ -17,7 +17,8 @@ const INDEX_SEO = {
     openGraph: {
         url: 'https://devfest21.gdgalgiers.com/',
         title: 'Devfest 21 Home',
-        description: '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
+        description:
+            '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
         images: [
             {
                 url: 'https://i.ibb.co/2tcPq6h/Devfest21.png',
@@ -64,7 +65,7 @@ export default function Home() {
             <HeroSection />
             <WhatIsDevfest />
             <GdgWtmSection />
-            {/* <SpeakersSection speakers={speakers} /> */}
+            <SpeakersSection speakers={speakers} />
             <Faq />
             <Footer />
         </Layout>
