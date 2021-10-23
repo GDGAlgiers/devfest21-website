@@ -28,7 +28,7 @@ export default function Accordion({ title, content }) {
                 className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
                 onClick={toggleAccordion}
             >
-                <p className="inline-block font-extrabold text-footnote md:text-4xl text-3xl light pl-32">
+                <p className="inline-block font-extrabold text-footnote md:text-4xl text-2xl light px-4 md:px-10">
                     {title}
                 </p>
                 <svg
@@ -48,7 +48,7 @@ export default function Accordion({ title, content }) {
                 style={{ maxHeight: `${height}` }}
                 className=" overflow-y-hidden md:text-3xl text-2xl text-left transition-max-height duration-700 ease-in-out"
             >
-                <div className="pb-10 pl-32">{content}</div>
+                <div className="pb-10 px-4 md:px-10">{content}</div>
             </div>
         </QstDiv>
     )
