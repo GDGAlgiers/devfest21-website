@@ -1,19 +1,15 @@
 const questions = [
     {
-        title: 'qst1',
-        content: 'content1',
+        title: 'What is a hackathon?',
+        content: 'a competiotion in which a large number of people meet to engage in collaborative computer programming.',
     },
     {
-        title: 'qst2',
-        content: 'content2',
+        title: 'can anyone attend devfest Algiers?',
+        content: 'yes everyone is welcomed, a computer student, student of any specialty, a professional or just out of curiosity.',
     },
     {
-        title: 'qst3',
-        content: 'content3',
-    },
-    {
-        title: 'qst4',
-        content: 'content4',
+        title: 'Is it free?',
+        content: 'YES Devfest Algiers 2021 is totally FREE !',
     },
 ]
 export default questions
