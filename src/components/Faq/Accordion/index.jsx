@@ -23,13 +23,13 @@ export default function Accordion({ title, content }) {
         z-index: 100;
     `
     return (
-        <QstDiv className="flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+        <QstDiv className="z-10 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
             <button
                 type="button"
                 className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
                 onClick={toggleAccordion}
             >
-                <p className="inline-block font-extrabold text-footnote text-4xl light pl-32">
+                <p className="inline-block font-extrabold text-footnote md:text-4xl text-3xl light pl-32">
                     {title}
                 </p>
                 <svg
@@ -47,7 +47,7 @@ export default function Accordion({ title, content }) {
             <div
                 ref={contentSpace}
                 style={{ maxHeight: `${height}` }}
-                className="overflow-auto text-3xl text-left transition-max-height duration-700 ease-in-out"
+                className="overflow-auto md:text-3xl text-2xl text-left transition-max-height duration-700 ease-in-out"
             >
                 <div className="pb-10 pl-32">{content}</div>
             </div>

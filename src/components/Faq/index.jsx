@@ -31,11 +31,9 @@ export default function Faq() {
                 alt=""
                 className="absolute left-10 top-10 hidden sm:block sm:w-48 lg:w-64"
             />
-            <div className="z-50">
-                {questions.map((qst) => {
-                    return <Accordion title={qst.title} content={qst.content} />
-                })}
-            </div>
+            {questions.map((qst) => {
+                return <Accordion title={qst.title} content={qst.content} />
+            })}
         </FaqDiv>
     )
 }
