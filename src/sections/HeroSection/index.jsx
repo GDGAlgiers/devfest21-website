@@ -110,7 +110,7 @@ const HeroSection = () => (
                     <DevfestGlobe />
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row w-full justify-between py-12 sm:py-6 px-8">
+            <div className="flex items-center flex-col lg:flex-row w-full justify-between py-12 sm:py-6 px-8">
                 <Countdown className=" w-full md:w-auto" />
                 <div className="flex flex-col text-white-lighter mt-20 sm:mt-12 md:mt-0">
                     <h1 className=" text-2xl sm:text-4xl  md:text-6xl font-extrabold">
