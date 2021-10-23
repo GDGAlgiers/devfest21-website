@@ -10,6 +10,7 @@ export default function Faq() {
     const FaqDiv = styled.div`
         font-family: Roboto Mono;
         background-color: #1c7ef0;
+        z-index: -2;
     `
     const Title = styled.div`
         -webkit-text-stroke: 2px black;
@@ -23,6 +24,7 @@ export default function Faq() {
                 src={QuestionMark}
                 alt=""
                 className="absolute -right-20 lg:-right-52 top-10 hidden md:block md:w-52 lg:w-96"
+                style={{zIndex: -1}}
                 width="350px"
             />
 

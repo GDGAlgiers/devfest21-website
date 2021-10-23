@@ -23,18 +23,18 @@ export default function Accordion({ title, content }) {
         z-index: 100;
     `
     return (
-        <QstDiv className="z-10 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
+        <QstDiv className="z-10 py-2 flex flex-col m-5 bg-white-default border-8  border-darkBlue">
             <button
                 type="button"
                 className="box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
                 onClick={toggleAccordion}
             >
-                <p className="inline-block font-extrabold text-footnote md:text-4xl text-3xl light pl-32">
+                <p className="inline-block font-extrabold text-footnote md:text-4xl text-2xl light pl-4 md:pl-10">
                     {title}
                 </p>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-20 w-20 mr-7 ${rotate} inline-block`}
+                    className={`h-12 w-12 mr-7 ${rotate} inline-block`}
                     viewBox="0 0 20 20"
                 >
                     <path

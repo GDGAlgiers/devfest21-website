@@ -64,7 +64,7 @@ export default function Home() {
             <HeroSection />
             <WhatIsDevfest />
             <GdgWtmSection />
-            <SpeakersSection speakers={speakers} />
+            {/* <SpeakersSection speakers={speakers} /> */}
             <Faq />
             <Footer />
         </Layout>
