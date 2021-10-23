@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import Typewriter from 'typewriter-effect'
 import NavBar from '../../components/NavBar'
 import BitsImage from '../../images/bits.png'
@@ -107,12 +107,10 @@ const HeroSection = () => (
                     </div>
                 </div>
                 <div className="w-3/5 hidden lg:block ">
-                    <Suspense fallback={null}>
-                        <DevfestGlobe />
-                    </Suspense>
+                    <DevfestGlobe />
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row w-full justify-between py-12 sm:py-6 px-8">
+            <div className="flex items-center flex-col lg:flex-row w-full justify-between py-12 sm:py-6 px-8">
                 <Countdown className=" w-full md:w-auto" />
                 <div className="flex flex-col text-white-lighter mt-20 sm:mt-12 md:mt-0">
                     <h1 className=" text-2xl sm:text-4xl  md:text-6xl font-extrabold">

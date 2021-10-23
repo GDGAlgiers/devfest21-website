@@ -60,14 +60,12 @@ export default function Home() {
                 ...INDEX_SEO,
             }}
         >
-            
             <HeroSection />
-            <WhatIsDevfest /> 
+            <WhatIsDevfest />
             <GdgWtmSection />
             {/* <SpeakersSection speakers={speakers} /> */}
             <StatsSection />
             <Footer />
-             
         </Layout>
     )
 }

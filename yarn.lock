@@ -10878,7 +10878,7 @@ three-geojson-geometry@^1.1:
     d3-geo "1 - 3"
     earcut "2"
 
-three-globe@^2.18, three-globe@^2.18.11:
+three-globe@^2.18:
   version "2.18.11"
   resolved "https://registry.yarnpkg.com/three-globe/-/three-globe-2.18.11.tgz#9f682b0229acd8d5cbd12538b7ca3895897988b1"
   integrity sha512-JvI0NtV/Z5+Smc4fHUN/AM5pbxLDrikGzisoMDSn2DCbo10KRZCr8BOm0YmBEGArGkGWQwf/xokWZUgsJMScNw==

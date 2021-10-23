@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -29,6 +29,10 @@ const ContentDiv = styled.div`
 
 const SpeakersSection = ({ speakers }) => {
     const [activeSlide, setActiveSlide] = useState(0)
+    const [width, setWidth] = useState(0)
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
 
     return (
         <section
@@ -120,7 +124,7 @@ const SpeakersSection = ({ speakers }) => {
                     </h3>
                     {speakers[activeSlide].jobs.map((job, index) => (
                         <p
-                            key={index}
+                            key={`sp-${index.toString()}`}
                             className="text-lg text-gray-500 font-mono"
                         >
                             {job}
@@ -128,24 +132,24 @@ const SpeakersSection = ({ speakers }) => {
                     ))}
                 </ContentDiv>
                 <Swiper
-                    slidesPerView={window.innerWidth > 420 ? 3 : 1}
+                    slidesPerView={width > 420 ? 3 : 1}
                     modules={[Navigation]}
                     navigation
                     loop
                     centeredSlides
-                    onSlideNextTransitionEnd={(swiper) => {
+                    onSlideNextTransitionEnd={() => {
                         setActiveSlide((value) =>
                             value + 1 > speakers.length - 1 ? 0 : value + 1
                         )
                     }}
-                    onSlidePrevTransitionEnd={(swiper) => {
+                    onSlidePrevTransitionEnd={() => {
                         setActiveSlide((value) =>
                             value - 1 < 0 ? speakers.length - 1 : value - 1
                         )
                     }}
                 >
                     {speakers.map((speaker, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={`sp-${index.toString()}`}>
                             <Speaker {...speaker} />
                         </SwiperSlide>
                     ))}

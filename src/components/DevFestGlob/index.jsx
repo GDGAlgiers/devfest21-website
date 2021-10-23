@@ -1,17 +1,20 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 import * as THREE from 'three'
-import Globe from 'react-globe.gl'
 import countries from '../../data/globe-data-min.json'
 import locations from '../../data/globe-locations.json'
 import Arcs from '../../data/globe-arcs.json'
 
 const DevFestGlobe = () => {
+    let Globe = () => null
+    if (typeof window !== 'undefined') Globe = require('react-globe.gl').default
+
     const globeMaterial = new THREE.MeshPhongMaterial()
     globeMaterial.bumpScale = 10
     globeMaterial.color = new THREE.Color(0x0a66d5)
     globeMaterial.emissive = new THREE.Color(0x220038)
     globeMaterial.emissiveIntensity = 0.1
     globeMaterial.shininess = 0.7
+
     const globeRef = useRef(null)
     useEffect(() => {
         globeRef.current.pointOfView({
@@ -36,11 +39,10 @@ const DevFestGlobe = () => {
         controls.minPolarAngle = Math.PI / 3.5
         controls.maxPolarAngle = Math.PI - Math.PI / 3
     }, [])
-    const [height, setHeight] = useState(null)
+
     const [width, setWidth] = useState(null)
     const div = useCallback((node) => {
         if (node !== null) {
-            setHeight(node.getBoundingClientRect().height)
             setWidth(node.getBoundingClientRect().width)
         }
     }, [])

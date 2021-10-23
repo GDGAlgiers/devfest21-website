@@ -45,7 +45,6 @@
     "tailwindcss": "^2.2.16",
     "tailwindcss-typography": "^3.1.0",
     "three": "^0.133.1",
-    "three-globe": "^2.18.11",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
