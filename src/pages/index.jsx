@@ -8,7 +8,7 @@ import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
 import Footer from '../components/Footer'
 import speakers from '../data/speakers.json'
-import Faq from '../components/Faq'
+import Faq from '../sections/Faq'
 
 const INDEX_SEO = {
     title: 'Home',

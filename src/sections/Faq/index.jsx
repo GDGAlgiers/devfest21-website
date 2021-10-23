@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import questions from '../../data/questions'
-import Accordion from './Accordion'
+import Accordion from '../../components/Accordion'
 import QuestionMark from '../../images/QuestionMark.svg'
 import FaqLogo from '../../images/logo.svg'
 
