@@ -40,7 +40,13 @@ export default function Faq() {
             />
             <div>
                 {questions.map((qst) => {
-                return <Accordion title={qst.title} key={qst.id} content={qst.content} />
+                    return (
+                        <Accordion
+                            title={qst.title}
+                            key={qst.id}
+                            content={qst.content}
+                        />
+                    )
                 })}
             </div>
         </FaqDiv>
