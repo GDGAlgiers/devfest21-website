@@ -11,14 +11,14 @@ import speakers from '../data/speakers.json'
 const INDEX_SEO = {
     title: 'Home',
     description:
-        'GDG DevFests are large community-run developer events happening around the globe focused on community building and learning about Google’s technologies. We organize DevFest 2021 in its 9th edition to offer speaker sessions, codelabs, workshops and an amazing Hackathon.',
+        '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
     openGraph: {
-        url: 'https://devfest21.netlify.app',
+        url: 'https://devfest21.gdgalgiers.com/',
         title: 'Devfest 21 Home',
-        description: 'Devfest21 event from GDG Algiers',
+        description: '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
         images: [
             {
-                url: 'https://i.ibb.co/kQgBCJD/devfest-Card.png',
+                url: 'https://i.ibb.co/2tcPq6h/Devfest21.png',
                 width: 800,
                 height: 600,
                 alt: 'devfest',

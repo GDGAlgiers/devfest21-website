@@ -20,7 +20,7 @@ const Header = styled.div`
     justify-content: space-between;
     background: white;
     margin-bottom: 0.3em;
-    padding: 0 1em 0 2.5em;
+    padding: 0 1em 0 1em;
 `
 const Title = styled.h6`
     color: #0053ba;
@@ -99,7 +99,7 @@ export default function ClubInfo({ logo, title, website, text }) {
                     />
                 </Icons>
             </Header>
-            <Content className=" px-4">
+            <Content className="px-5">
                 <Club>
                     <ClubLogo src={Logo.default} alt="LOGO" />
                 </Club>
