@@ -5,7 +5,7 @@ import Navigations from '../../data/navbar'
 import RegisterButton from '../common/RegisterButton'
 import DevfestLogo from '../../images/logo.svg'
 
-const NavBar = ({ navBarClass }) => (
+const NavBar = ({ navBarClass , alert }) => (
     <Disclosure as="nav" className={`${navBarClass ?? ''}`}>
         {({ open }) => (
             <>
@@ -47,8 +47,8 @@ const NavBar = ({ navBarClass }) => (
                                 </a>
                             ))}
                         </div>
-                        <div>
-                            <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block " />
+                        <div onClick={()=>alert()}>
+                            <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block "/>
                         </div>
                     </div>
                 </div>
