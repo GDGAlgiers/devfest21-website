@@ -5,7 +5,11 @@ const SubscribeButton = ({ classes }) => (
     <button
         type="button"
         className={`relative border-2 border-white-lighter bg-darkBlue text-white-lighter ${classes}`}
-        onClick={navigate('https://gdg.community.dev/events/details/google-gdg-algiers-presents-devfest-algiers-21/')}
+        onClick={() =>
+            navigate(
+                'https://gdg.community.dev/events/details/google-gdg-algiers-presents-devfest-algiers-21/'
+            )
+        }
     >
         SUBSCRIBE
         <svg
