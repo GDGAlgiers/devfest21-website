@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Typewriter from 'typewriter-effect'
 import NavBar from '../../components/NavBar'
 import BitsImage from '../../images/bits.png'
@@ -6,17 +6,34 @@ import DevfestLogo from '../../images/logo.svg'
 import DevfestGlobe from '../../components/DevFestGlob'
 import RegisterButton from '../../components/common/RegisterButton'
 import Countdown from '../../components/Countdown'
+import Alert from '../../components/common/Alert/Alert'
 
-const HeroSection = () => (
+
+const HeroSection = () =>{
+    const closeAlert = () =>{
+        setAlert(false);
+        clearTimeout() ; 
+    }
+    const showAlert = () => {
+        setAlert(true)
+        setTimeout(() => {
+            setAlert(false)
+        }, 3000);
+    }
+const [alertActive , setAlert] = useState(false) ; 
+
+return(
     <section id="#home">
         <div
+          
             className=" max-w-full  relative flex flex-col"
             style={{
                 background:
                     'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
             }}
         >
-            <NavBar navBarClass="z-10" />
+            <NavBar navBarClass="z-10"  alert={showAlert}  />
+           
             <div className=" absolute -top-24 left-0 z-0 w-48 md:w-64">
                 <img src={BitsImage} alt="Bits" />
             </div>
@@ -103,7 +120,7 @@ const HeroSection = () => (
                         />
                     </div>
                     <div className=" pt-0 lg:pt-14 flex justify-start lg:justify-center">
-                        <RegisterButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28 " />
+                        <RegisterButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28"/>
                     </div>
                 </div>
                 <div className="w-3/5 hidden lg:block ">
@@ -123,6 +140,8 @@ const HeroSection = () => (
                 </div>
             </div>
         </div>
+        <Alert Message="registrations will open soon" alertActive= {alertActive} closeAlert= {closeAlert}></Alert>
     </section>
 )
+                        }
 export default HeroSection
