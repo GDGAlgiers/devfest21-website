@@ -18,23 +18,26 @@ const HeroSection = () => {
         setAlert(true)
         setTimeout(() => {
             setAlert(false)
-        }, 3000)
+
+        }, 5000);
     }
 
-    return (
-        <section id="#home">
-            <div
-                className=" max-w-full  relative flex flex-col"
-                style={{
-                    background:
-                        'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
-                }}
-            >
-                <NavBar navBarClass="z-10" alert={showAlert} />
+return(
+    <section id="#home">
+        <div
+          
+            className=" max-w-full  relative flex flex-col"
+            style={{
+                background:
+                    'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
+            }}
+        >
+            <NavBar navBarClass="z-10"  showAlert={showAlert}  />
+           
+            <div className=" absolute -top-24 left-0 z-0 w-48 md:w-64">
+                <img src={BitsImage} alt="Bits" />
+            </div>
 
-                <div className=" absolute -top-24 left-0 z-0 w-48 md:w-64">
-                    <img src={BitsImage} alt="Bits" />
-                </div>
 
                 <div className="relative flex flex-row w-full z-10 overflow-x-hidden overflow-y-hidden">
                     <div className=" absolute -right-96 pt-16 text-xs w-2/6 z-20 text-darkBlue overflow-y-hidden">
