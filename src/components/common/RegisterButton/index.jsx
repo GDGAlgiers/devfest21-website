@@ -1,11 +1,9 @@
 import React from 'react'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 const notify= () =>toast.info("Wow so easy!")
-const RegisterButton = ({ classes}) => (
+const RegisterButton = ({ classes, showAlert}) => (
     <div>
     <button
-        
+        onClick={()=>showAlert()}
         type="button"
         className={`relative border-2 border-white-lighter bg-darkBlue text-white-lighter ${classes} `}
     >
@@ -31,8 +29,6 @@ const RegisterButton = ({ classes}) => (
             <circle cx="2.95837" cy="3.12793" r="2.94006" fill="#202124" />
         </svg>
     </button>
-    <ToastContainer
-    position="top-center"/>
     </div>
 )
 export default RegisterButton; 

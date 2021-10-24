@@ -18,7 +18,7 @@ const HeroSection = () =>{
         setAlert(true)
         setTimeout(() => {
             setAlert(false)
-        }, 3000);
+        }, 5000);
     }
 const [alertActive , setAlert] = useState(false) ; 
 
@@ -32,7 +32,7 @@ return(
                     'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
             }}
         >
-            <NavBar navBarClass="z-10"  alert={showAlert}  />
+            <NavBar navBarClass="z-10"  showAlert={showAlert}  />
            
             <div className=" absolute -top-24 left-0 z-0 w-48 md:w-64">
                 <img src={BitsImage} alt="Bits" />
