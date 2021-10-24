@@ -141,7 +141,7 @@ const HeroSection = () => {
                         <h1 className=" text-2xl sm:text-4xl  md:text-6xl font-extrabold">
                             Any minute now
                         </h1>
-                        <p className="font-light">
+                        <p className="font-light mt-2">
                             Be the first to know about the event, subscribe now.
                         </p>
                     </div>
