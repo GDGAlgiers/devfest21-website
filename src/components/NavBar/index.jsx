@@ -47,7 +47,7 @@ const NavBar = ({ navBarClass , showAlert }) => (
                                 </a>
                             ))}
                         </div>
-                        <div className="bg-red w-min h-min p-1">
+                        <div className="w-min h-min p-1">
                             <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block " showAlert={showAlert}/>
                         </div>
                     </div>
