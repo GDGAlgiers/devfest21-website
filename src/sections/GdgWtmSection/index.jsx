@@ -71,7 +71,7 @@ export default function GdgWtmSection() {
                 <Binary src={BinaryImage} alt="Binary" />
             </White>
 
-            <Container className="p-0 md:p-2">
+            <Container className="px-2 py-2 md:py-4">
                 <div className="flex md:justify-start justify-center mb-3">
                     <ClubInfo
                         title="GDG ALGIERS"

@@ -6,6 +6,7 @@ import RegisterButton from '../common/RegisterButton'
 import DevfestLogo from '../../images/logo.svg'
 
 const NavBar = ({ navBarClass , showAlert }) => (
+
     <Disclosure as="nav" className={`${navBarClass ?? ''}`}>
         {({ open }) => (
             <>
@@ -47,8 +48,10 @@ const NavBar = ({ navBarClass , showAlert }) => (
                                 </a>
                             ))}
                         </div>
+
                         <div className="w-min h-min p-1">
                             <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block " showAlert={showAlert}/>
+
                         </div>
                     </div>
                 </div>

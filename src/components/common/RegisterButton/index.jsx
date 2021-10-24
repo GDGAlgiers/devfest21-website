@@ -31,4 +31,4 @@ const RegisterButton = ({ classes, showAlert}) => (
     </button>
     </div>
 )
-export default RegisterButton; 
+export default RegisterButton

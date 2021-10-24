@@ -3,11 +3,12 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
-import SpeakersSection from '../sections/speakersSection'
+// import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
+import HistorySection from '../sections/HistorySection'
 import Footer from '../components/Footer'
-import speakers from '../data/speakers.json'
+// import speakers from '../data/speakers.json'
 import Faq from '../sections/Faq'
 
 const INDEX_SEO = {
@@ -17,10 +18,11 @@ const INDEX_SEO = {
     openGraph: {
         url: 'https://devfest21.gdgalgiers.com/',
         title: 'Devfest 21 Home',
-        description: '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
+        description:
+            '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.',
         images: [
             {
-                url: 'https://i.ibb.co/2tcPq6h/Devfest21.png',
+                url: 'https://i.ibb.co/1vRR8nD/Devfest21-1.png',
                 width: 800,
                 height: 600,
                 alt: 'devfest',
@@ -39,6 +41,7 @@ export default function Home() {
                         author
                         keywords
                         siteUrl
+                        image
                     }
                 }
             }
@@ -62,9 +65,11 @@ export default function Home() {
             }}
         >
             <HeroSection />
-            <WhatIsDevfest />
-            <GdgWtmSection />
-            {/* <SpeakersSection speakers={speakers} /> */}
+            <section id="about">
+                <WhatIsDevfest />
+                <GdgWtmSection />
+                <HistorySection />
+            </section>
             <Faq />
             <Footer />
         </Layout>

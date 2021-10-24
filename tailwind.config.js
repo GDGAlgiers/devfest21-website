@@ -40,6 +40,9 @@ module.exports = {
             default: '0 2px 5px rgba(0, 0, 0, 0.5)',
             lg: '0 2px 10px rgba(0, 0, 0, 0.5)',
         },
+        boxShadow: {
+            sm: '5px 5px 0px rgba(10, 118, 240, 1)',
+        },
         textDecorationStyle: {
             // defaults to these values
             solid: 'solid',
