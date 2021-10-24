@@ -41,7 +41,7 @@ export default function Accordion({ title, content }) {
                 style={{ maxHeight: `${height}` }}
                 className="text-left overflow-y-hidden md:text-3xl text-2xl transition-max-height duration-700 ease-in-out"
             >
-                <div className="pb-10 px-4 md:px-10">{content}</div>
+                <div className="py-4 px-4 md:px-10">{content}</div>
             </div>
         </QstDiv>
     )

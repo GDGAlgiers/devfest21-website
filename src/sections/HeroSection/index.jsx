@@ -139,11 +139,10 @@ const HeroSection = () => {
                     <Countdown className=" w-full md:w-auto" />
                     <div className="flex flex-col text-white-lighter mt-20 sm:mt-12 md:mt-0">
                         <h1 className=" text-2xl sm:text-4xl  md:text-6xl font-extrabold">
-                            COMING SOON!
+                            Any minute now
                         </h1>
                         <p className="font-light">
-                            Subscribe to receive notifications and Updates about
-                            the event
+                            Be the first to know about the event, subscribe now.
                         </p>
                     </div>
                 </div>

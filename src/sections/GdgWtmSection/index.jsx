@@ -54,10 +54,10 @@ const Binary = styled.img`
 `
 
 const textGDG =
-    'GDG Algiers is a local group of developers and motivate young students who are interested in Google’s developer technology products and platforms. It is located at the national school of computer sciences and hosts a variety of technical activities for developers through different events that aim to help the developers community get the latest technology updates.'
+    'GDG Algiers is a local group of developers and motivated young students and professionals who are interested in Google’s developer technology products and platforms. It is located in the Higher National School of computer science, Algiers (ESI ex INI). It hosts a variety of technical activities through different events and projects that aim to help the developers community get the latest technology updates.'
 
 const textWTM =
-    "WTM Algiers, also known as the 'Women Techmakers Algiers' program, was created to increase visibility, community, and resources for women in technology and also spread learning and build role models globally. It's located at the National Higher School of Computer science and dedicated to anyone who is passionate and motivated about the tech field."
+    'WTM Algiers, also known as the "Women Techmakers Algiers" program, was created to increase the presence of women in the STEM field and also spread learning and build role models globally. It\'s located in the National Higher School of computer science, Algiers (ESI ex INI) and dedicated to anyone who is passionate and motivated about the tech field.'
 
 export default function GdgWtmSection() {
     return (
