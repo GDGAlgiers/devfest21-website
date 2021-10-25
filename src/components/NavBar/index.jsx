@@ -1,12 +1,13 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { navigate } from 'gatsby'
 import Navigations from '../../data/navbar'
 import RegisterButton from '../common/RegisterButton'
 import DevfestLogo from '../../images/logo.svg'
 
-const NavBar = ({ navBarClass, alert }) => (
-    <Disclosure as="nav" className={`${navBarClass ?? ''}`}>
+const NavBar = ({ className }) => (
+    <Disclosure as="nav" className={`${className ?? ''}`}>
         {({ open }) => (
             <>
                 <div className="flex-1 max-w-full px-4 sm:px-8 lg:px-8">
@@ -47,7 +48,7 @@ const NavBar = ({ navBarClass, alert }) => (
                                 </a>
                             ))}
                         </div>
-                        <div onClick={() => alert()}>
+                        <div onClick={() => navigate('/register')}>
                             <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block " />
                         </div>
                     </div>

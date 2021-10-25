@@ -20,7 +20,7 @@ export default [
         href: '#sponsors',
     },
     {
-        title: 'Contact',
-        href: '#contact',
+        title: 'FAQ',
+        href: '#faq',
     },
 ]

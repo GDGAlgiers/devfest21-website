@@ -17,7 +17,7 @@ const Title = styled.div`
 
 export default function Faq() {
     return (
-        <section id="contact">
+        <section id="faq">
             <FaqDiv
                 style={{ zIndex: '20' }}
                 className="max-w-screen overflow-hidden relative text-center py-10 lg:px-32 md:px-10 sm:px-5  font-body"
