@@ -1,7 +1,7 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { navigate } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import Navigations from '../../data/navbar'
 import RegisterButton from '../common/RegisterButton'
 import DevfestLogo from '../../images/logo.svg'
@@ -13,7 +13,9 @@ const NavBar = ({ className }) => (
                 <div className="flex-1 max-w-full px-4 sm:px-8 lg:px-8">
                     <div className="relative  flex flex-row justify-center sm:justify-between h-14  sm:h-20 sm:pt-4">
                         <div className="w-48 lg:block hidden">
-                            <img src={DevfestLogo} alt="Devfest" />
+                            <Link to="/">
+                                <img src={DevfestLogo} alt="Devfest" />
+                            </Link>
                         </div>
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                             {/* Mobile menu button */}
