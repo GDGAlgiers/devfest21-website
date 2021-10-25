@@ -67,11 +67,13 @@ export default function Home() {
             <HeroSection />
             <section id="about">
                 <WhatIsDevfest />
+            </section>
                 <GdgWtmSection />
                 <HistorySection />
-            </section>
             <Faq />
-            <Footer />
+            <section id="contact">
+                <Footer />
+            </section>
         </Layout>
     )
 }

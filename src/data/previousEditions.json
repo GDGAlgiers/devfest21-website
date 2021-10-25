@@ -2,7 +2,7 @@
     {
         "id": "devfest-2018",
         "title": "Devfest'18",
-        "description": "Devfest Algiers 2018 was about “Digital wellbeing”, it was enriched by a Hackathon, workshops and conferences",
+        "description": "Devfest Algiers'18 theme was \"Digital wellbeing\" It was enriched by a Hackathon, a set of different workshops and conferences.",
         "stats": [
             { "number": "200", "description": "attendees" },
             { "number": "80", "description": "hacker participated" }
@@ -11,7 +11,7 @@
     {
         "id": "devfest-2019",
         "title": "Devfest 2019",
-        "description": "It was the 8th edition of devfest Algiers. The theme was about D&I 'Diversity and inclusion' a very important culture and principle very essential factor of equality and social cohesion that aims to create a healthy, serene and inclusive work environment.",
+        "description": "DevFest Algiers 2019, in its 8th edition, held the \"Diversity and inclusion\" as a theme. Diversity & Inclusion (D&I) is a very important base that is considered to be an essential factor of equality and social cohesion, it aims to create a healthy, serene and inclusive work environment of all categories in the community, social and professional that fights against all kinds of discrimination.",
         "stats": [
             { "number": "304", "description": "participants" },
             { "number": "6", "description": "Workshops" },
@@ -22,7 +22,7 @@
     {
         "id": "devfest-2020",
         "title": "Devfest 2020",
-        "description": "devfest Algiers 2020 was about 'online safety' and because of the pandemic it was an online event with tracks, panels, equity in tech session by WTM Algiers and a competition",
+        "description": "Last year's DevFest was about \"Online Safety\", and because of the pandemic, it was held online for the safety of everyone. It had three main tracks: Talks, a competiton, panels, equity in tech session by WTM Algiers, which made a great appearance.",
         "stats": [
             { "number": "153", "description": "participants" },
             { "number": "9", "description": "Conferences" },

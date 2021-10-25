@@ -4,7 +4,7 @@ import testMp4 from '../../videos/Devfest21_Teaser.mp4'
 
 const WhatIsDevfest = () => {
     const text =
-        '“DevFest”, short for “developer festival” is an annual technical event organized by google developers groups aiming to deliver conferences and workshops to students, developers, professionals, and everyone passionate about the tech field, and a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.'
+        '“DevFest”, short for “Developer Festival” is an annual technical event organized by Google Developers Groups (GDGs), aiming to deliver conferences and workshops to students, developers, professionals and everyone passionate about the tech field. It is considered as a great opportunity for them to network with tech enthusiasts and get updated about the latest trends.'
     const title = 'What is devfest'
     return (
         <div className="app flex flex-col lg:flex-row justify-between items-center m-4 sm:m-16 font-mono">

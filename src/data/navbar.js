@@ -1,26 +1,26 @@
 export default [
     {
         title: 'Home',
-        href: '#home',
+        href: '/#home',
     },
     {
         title: 'About',
-        href: '#about',
+        href: '/#about',
     },
     {
         title: 'Agenda',
-        href: '#agenda',
+        href: '/#agenda',
     },
     {
         title: 'Speakers',
-        href: '#speakers',
+        href: '/#speakers',
     },
     {
         title: 'Sponsors',
-        href: '#sponsors',
+        href: '/#sponsors',
     },
     {
         title: 'FAQ',
-        href: '#faq',
+        href: '/#faq',
     },
 ]

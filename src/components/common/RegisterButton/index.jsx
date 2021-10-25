@@ -1,8 +1,9 @@
 import React from 'react'
 
-const RegisterButton = ({ classes }) => (
+const RegisterButton = ({ classes, onClick }) => (
     <div>
         <button
+            onClick={() => onClick()}
             type="button"
             className={`relative border-2 border-white-lighter bg-darkBlue text-white-lighter ${classes} `}
         >

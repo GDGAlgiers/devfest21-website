@@ -1,11 +1,11 @@
 import React from 'react'
 import SEO from '../SEO'
 
-const Layout = ({ seo, children }) => {
+const Layout = ({ seo, children, className }) => {
     return (
         <>
             <SEO {...seo} />
-            <main>{children}</main>
+            <main className={className}>{children}</main>
         </>
     )
 }

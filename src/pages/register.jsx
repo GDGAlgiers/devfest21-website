@@ -53,6 +53,10 @@ function Register() {
                 ],
                 ...REGISTER_SEO,
             }}
+            style={{
+                background:
+                    'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
+            }}
         >
             <NavBar className="z-10 bg-blue" />
             <iframe

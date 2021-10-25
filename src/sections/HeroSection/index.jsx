@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Typewriter from 'typewriter-effect'
 import NavBar from '../../components/NavBar'
 import BitsImage from '../../images/bits.png'
@@ -9,18 +9,6 @@ import Countdown from '../../components/Countdown'
 import Alert from '../../components/common/Alert/Alert'
 
 const HeroSection = () => {
-    const [alertActive, setAlert] = useState(false)
-    const closeAlert = () => {
-        setAlert(false)
-        clearTimeout()
-    }
-    const showAlert = () => {
-        setAlert(true)
-        setTimeout(() => {
-            setAlert(false)
-        }, 3000)
-    }
-
     return (
         <section id="#home">
             <div
@@ -30,7 +18,7 @@ const HeroSection = () => {
                         'linear-gradient(107.56deg, #0053BA 0%, #0574EF 34.95%, #1C7EF0 89.12%)',
                 }}
             >
-                <NavBar navBarClass="z-10" alert={showAlert} />
+                <NavBar className="z-10" />
 
                 <div className=" absolute -top-24 left-0 z-0 w-48 md:w-64">
                     <img src={BitsImage} alt="Bits" />
@@ -139,20 +127,14 @@ const HeroSection = () => {
                     <Countdown className=" w-full md:w-auto" />
                     <div className="flex flex-col text-white-lighter mt-20 sm:mt-12 md:mt-0">
                         <h1 className=" text-2xl sm:text-4xl  md:text-6xl font-extrabold">
-                            COMING SOON!
+                            Any minute now
                         </h1>
-                        <p className="font-light">
-                            Subscribe to receive notifications and Updates about
-                            the event
+                        <p className="font-light mt-2">
+                            Be the first to know about the event, subscribe now.
                         </p>
                     </div>
                 </div>
             </div>
-            <Alert
-                Message="registrations will open soon"
-                alertActive={alertActive}
-                closeAlert={closeAlert}
-            />
         </section>
     )
 }

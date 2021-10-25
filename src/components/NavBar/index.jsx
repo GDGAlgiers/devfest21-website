@@ -48,8 +48,12 @@ const NavBar = ({ className }) => (
                                 </a>
                             ))}
                         </div>
-                        <div onClick={() => navigate('/register')}>
-                            <RegisterButton classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block " />
+
+                        <div className="w-min h-min p-1">
+                            <RegisterButton
+                                classes="py-2 text-base md:text-lg px-3 md:px-5 lg:px-10 hidden sm:block "
+                                onClick={() => navigate('/register')}
+                            />
                         </div>
                     </div>
                 </div>
@@ -65,7 +69,10 @@ const NavBar = ({ className }) => (
                                 {item.title}
                             </a>
                         ))}
-                        <RegisterButton classes="py-1 px-8" />
+                        <RegisterButton
+                            classes="py-1 px-8"
+                            onClick={() => navigate('/register')}
+                        />
                     </div>
                 </Disclosure.Panel>
             </>
