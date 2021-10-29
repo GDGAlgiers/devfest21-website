@@ -64,17 +64,17 @@ export default function Home() {
                 ...INDEX_SEO,
             }}
         >
-            {/* <HeroSection />
+            <HeroSection />
             <section id="about">
                 <WhatIsDevfest />
             </section>
                 <GdgWtmSection />
-                <HistorySection /> */}
+                <HistorySection />
                 <SpeakersSection speakers={speakers} />
-            {/* <Faq />
+            <Faq />
             <section id="contact">
                 <Footer />
-            </section> */}
+            </section>
         </Layout>
     )
 }
