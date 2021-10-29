@@ -8,7 +8,7 @@ import EarthIcon from "../../images/earth-icon.png"
 
 const SponsorsSection = () => {
   return (
-    <section className="h-full w-full lg:h-screen relative overflow-hidden">
+    <section className="h-full w-full relative">
       <div className="font-robotoMono  pl-4 pt-6">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bol ml-2 lg:ml-14 "
@@ -20,22 +20,31 @@ const SponsorsSection = () => {
           Thank you for sponsoring us!
         </h3>
       </div>
-      <div className=" flex flex-col lg:flex-row p-4">
+      <div className="lg:w-4/5 p-2 md:p-4">
+        <div className="flex flex-col lg:flex-row">
+          <SponsorsCard
+            margin="lg:mt-16 mt-8 z-10"
+            imageSrc={GithubImage}
+            imageAlt="Github logo"
+          />
+          <SponsorsCard
+            margin="lg:mt-32 mt-8 z-10"
+            imageSrc={SamsungImage}
+            imageAlt="Samsung logo"
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row">
         <SponsorsCard
-          margin="lg:mt-28 mt-8 z-10"
-          imageSrc={GithubImage}
-          imageAlt="Github logo"
-        />
-        <SponsorsCard
-          margin="lg:mt-16 mt-8 z-10"
-          imageSrc={SamsungImage}
-          imageAlt="Samsung logo"
-        />
-        <SponsorsCard
-          margin="lg:mt-28 mt-8 z-10"
-          imageSrc={GoogleImage}
-          imageAlt="Google logo"
-        />
+            margin="lg:mt-16 mt-8 z-10"
+            imageSrc={GoogleImage}
+            imageAlt="Google logo"
+          />
+          <SponsorsCard
+            margin="lg:mt-32 mt-8 z-10"
+            imageSrc={GoogleImage}
+            imageAlt="Google logo"
+          />
+        </div>
       </div>
       <div
         style={{ backgroundColor: "#3D8DF5", width: "20%" }}
