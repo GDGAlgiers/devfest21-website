@@ -3,12 +3,12 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import WhatIsDevfest from '../sections/WhatIsDesvfest'
 import Layout from '../components/Layout'
-// import SpeakersSection from '../sections/speakersSection'
+import SpeakersSection from '../sections/speakersSection'
 import HeroSection from '../sections/HeroSection'
 import GdgWtmSection from '../sections/GdgWtmSection'
 import HistorySection from '../sections/HistorySection'
 import Footer from '../components/Footer'
-// import speakers from '../data/speakers.json'
+import speakers from '../data/speakers.json'
 import Faq from '../sections/Faq'
 
 const INDEX_SEO = {
@@ -64,16 +64,17 @@ export default function Home() {
                 ...INDEX_SEO,
             }}
         >
-            <HeroSection />
+            {/* <HeroSection />
             <section id="about">
                 <WhatIsDevfest />
             </section>
                 <GdgWtmSection />
-                <HistorySection />
-            <Faq />
+                <HistorySection /> */}
+                <SpeakersSection speakers={speakers} />
+            {/* <Faq />
             <section id="contact">
                 <Footer />
-            </section>
+            </section> */}
         </Layout>
     )
 }
