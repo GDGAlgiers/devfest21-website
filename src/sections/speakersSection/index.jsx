@@ -50,59 +50,6 @@ const SpeakersSection = ({ speakers }) => {
                 />
             </div>
 
-            <p className="code hidden sm:block">
-                <Typewriter
-                    options={{
-                        delay: 20,
-                    }}
-                    onInit={(typewriter) => {
-                        typewriter
-                            .typeString('fun main() {')
-                            .typeString('<br/>')
-                            .typeString(
-                                '<pre>  print("Wait for Us COOL THINGS ARE COMING ....")</pre>'
-                            )
-                            .typeString('<br/>')
-                            .typeString('<pre>  // GDG Algiers Present<pre>')
-                            .typeString(
-                                '<pre>  CoroutineScope gdgAlgiers;</pre>'
-                            )
-                            .typeString('<br/>')
-                            .typeString('<pre>  gdgAlgiers.launch{</pre>')
-                            .typeString('<br/>')
-                            .typeString("<pre>    // Let's make it;</pre>")
-                            .typeString(
-                                "<pre>    Event devfest21 = Devfest(edition=2021,host='GDGAlgiers')</pre>"
-                            )
-                            .typeString('<br/>')
-                            .typeString('<pre>    // Learn Together</pre>')
-                            .typeString(
-                                '<pre>    devfest21.setLearnTogether(true)</pre>'
-                            )
-                            .typeString('<br/>')
-                            .typeString('<pre>    // Celebrate It </pre>')
-                            .typeString(
-                                '<pre>    devfest21.setHaveFun(true)</pre>'
-                            )
-                            .typeString('<br/>')
-                            .typeString('<pre>    // Hack Together </pre>')
-                            .typeString(
-                                '<pre>    devfest21.setHackerMode(true)</pre>'
-                            )
-                            .typeString('<br/>')
-                            .typeString(
-                                "<pre>    Result.Success('And Enjoy Another Edition of DevFest')</pre>"
-                            )
-                            .typeString('<pre>  }.onStart({</pre>')
-                            .typeString(
-                                '<pre>    print("LET\'S DO COOL THINGS THAT MATTER");</pre>'
-                            )
-                            .typeString('<pre>  }) </pre>')
-                            .typeString('}')
-                            .start()
-                    }}
-                />
-            </p>
 
             <h1 className="text-5xl z-10 text-blue font-bold">Speakers</h1>
             <p className="text-lg  delay: 20, text-gray-600 font-normal font-mono">
