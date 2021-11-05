@@ -26,7 +26,7 @@ const Speaker = ({ name, image, jobs }) => {
     return (
         <div className="p-4 flex flex-col md:flex-row gap-8 justify-center items-center">
             <ImgDiv>
-                <img src={image} alt={name} className="w-full h-full" />
+                <img src={image} alt={name} className="w-full h-full object-cover" />
             </ImgDiv>
             <ContentDiv>
                 <h3 className="text-xl md:text-4xl font-black capitalize font-mono text-black">
