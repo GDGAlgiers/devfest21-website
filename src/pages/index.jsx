@@ -10,6 +10,7 @@ import HistorySection from '../sections/HistorySection'
 import Footer from '../components/Footer'
 import speakers from '../data/speakers.json'
 import Faq from '../sections/Faq'
+import SponsorsSection from '../sections/SposorsSection'
 
 const INDEX_SEO = {
     title: 'Home',
@@ -70,11 +71,16 @@ export default function Home() {
             </section>
                 <GdgWtmSection />
                 <HistorySection />
+            <section id="speakers">
                 <SpeakersSection speakers={speakers} />
-            <Faq />
-            <section id="contact">
-                <Footer />
             </section>
+            <section id="sponsors">
+                <SponsorsSection />
+             </section>
+              <Faq />
+              <section id="contact">
+                <Footer />
+              </section>
         </Layout>
     )
 }
