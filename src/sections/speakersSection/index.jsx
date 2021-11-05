@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -28,11 +28,6 @@ const ContentDiv = styled.div`
 `
 
 const SpeakersSection = ({ speakers }) => {
-    const [activeSlide, setActiveSlide] = useState(0)
-    const [width, setWidth] = useState(0)
-    useEffect(() => {
-        setWidth(window.innerWidth)
-    }, [])
 
     return (
         <section
@@ -114,39 +109,15 @@ const SpeakersSection = ({ speakers }) => {
                 They are making it happens!
             </p>
 
-            <div className=" z-10 py-52 px-8 w-full h-80 bg-blue flex justify-center items-center relative">
+            <div className=" z-10 py-52 px-8 w-full h-80 bg-blue flex flex-row justify-center items-center relative">
                 <div className="white-border left" />
                 <div className="white-border right" />
 
-                <ContentDiv>
-                    <h3 className="text-4xl font-black capitalize font-mono text-black">
-                        {speakers[activeSlide].name}
-                    </h3>
-                    {speakers[activeSlide].jobs.map((job, index) => (
-                        <p
-                            key={`sp-${index.toString()}`}
-                            className="text-lg text-gray-500 font-mono"
-                        >
-                            {job}
-                        </p>
-                    ))}
-                </ContentDiv>
                 <Swiper
-                    slidesPerView={width > 420 ? 3 : 1}
+                    slidesPerView={1}
                     modules={[Navigation]}
                     navigation
                     loop
-                    centeredSlides
-                    onSlideNextTransitionEnd={() => {
-                        setActiveSlide((value) =>
-                            value + 1 > speakers.length - 1 ? 0 : value + 1
-                        )
-                    }}
-                    onSlidePrevTransitionEnd={() => {
-                        setActiveSlide((value) =>
-                            value - 1 < 0 ? speakers.length - 1 : value - 1
-                        )
-                    }}
                 >
                     {speakers.map((speaker, index) => (
                         <SwiperSlide key={`sp-${index.toString()}`}>

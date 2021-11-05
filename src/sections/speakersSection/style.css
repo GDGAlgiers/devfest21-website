@@ -2,25 +2,18 @@
     --blue: #0972e9;
 }
 
-.swiper-button-next { color: white; }
+.swiper-button-next { color: white !important; }
 
-.swiper-button-prev { color: white; }
+.swiper-button-prev { color: white !important; }
+
 
 .swiper-slide {
-    filter: blur(10px);
-    transform: scale(0.5);
-    transition: transform .3s ease;
+    transform: translateY(25%);
 }
 
-.swiper-slide-active {
-    filter: blur(0);
-    transform: scale(1) translateX(-40%);
-}
-
-@media (max-width: 420px) {
-    .swiper-slide-active {
-        filter: blur(0);
-        transform: scale(1) translateX(0);
+@media (max-width: 1000px) {
+    .swiper-slide {
+        transform: translateY(0);
     }
 }
 
