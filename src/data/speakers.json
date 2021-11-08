@@ -18,5 +18,20 @@
         "name": "Thomas Ezan",
         "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2Fthomas.jpg?alt=media&token=a2921581-8a52-4a06-8ab1-c30eb70a162c",
         "jobs": ["Android Developer Relations at Google"]
+    },
+    {
+        "name": "Tejas Chopra",
+        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2FTejas%20Chopra.jpeg?alt=media&token=01455fc8-57e4-491c-a52b-3d1e663a60cb",
+        "jobs": ["Senior Software Engineer at Netflix"]
+    },
+    {
+        "name": "Hadjer Benmeziane",
+        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2FHadjer%20Benmeziane.jpg?alt=media&token=076544f5-90d8-4bc2-bf28-6727fd230ac6",
+        "jobs": ["PhD Candidate on AutoML", "Founder of School of AI Algiers"]
+    },
+    {
+        "name": "Paul Kinlan",
+        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2Fpaul_kinlan.jpg?alt=media&token=064c765a-84e3-48d9-ac70-ae9e40d9476f",
+        "jobs": ["Lead for Web and Chrome Developer Relations at Google"]
     }
 ]
