@@ -53,7 +53,7 @@ const SpeakersSection = ({ speakers }) => {
 
             <h1 className="text-5xl z-10 text-blue font-bold">Speakers</h1>
             <p className="text-lg  delay: 20, text-gray-600 font-normal font-mono">
-                They are making it happens!
+                They are making it happen!
             </p>
 
             <div className=" z-10 py-52 px-8 w-full h-80 bg-blue flex flex-row justify-center items-center relative">
