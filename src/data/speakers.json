@@ -15,9 +15,9 @@
         "jobs": ["Field CTO/Chief Evangelist at Gradle"]
     },
     {
-        "name": "Thomas Ezan",
-        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2Fthomas.jpg?alt=media&token=a2921581-8a52-4a06-8ab1-c30eb70a162c",
-        "jobs": ["Android Developer Relations at Google"]
+        "name": "Karim Beguir",
+        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2FKarim%20Beguire.jpg?alt=media&token=d93310c2-5027-459a-9816-435b0cf45a91",
+        "jobs": ["Co-Founder & CEO, InstaDeep"]
     },
     {
         "name": "Tejas Chopra",
@@ -28,6 +28,11 @@
         "name": "Hadjer Benmeziane",
         "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2FHadjer%20Benmeziane.jpg?alt=media&token=076544f5-90d8-4bc2-bf28-6727fd230ac6",
         "jobs": ["PhD Candidate on AutoML", "Founder of School of AI Algiers"]
+    },
+    {
+        "name": "Abdelghani Lahbib",
+        "image": "https://firebasestorage.googleapis.com/v0/b/devfest21-website.appspot.com/o/speakers%2FAbdelghani.jpg?alt=media&token=435ed466-ddf7-4087-832b-90bf53b74c23",
+        "jobs": ["Certified SalesForce Analyst & Developer"]
     },
     {
         "name": "Paul Kinlan",
