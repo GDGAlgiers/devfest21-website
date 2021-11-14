@@ -3,6 +3,10 @@ import Typewriter from "typewriter-effect"
 import SponsorsCard from "../../components/SponsorsCard"
 import WeightsImage from "../../images/Weights.png"
 import AltiusImage from "../../images/Altius.png"
+import GithubImage from "../../images/GitHub.png"
+import InstaDeepImage from "../../images/InstaDeep.png"
+import LGImage from "../../images/LG.png"
+import GomycodeImage from "../../images/Gomycode.png"
 import EarthIcon from "../../images/earth-icon.png"
 
 const SponsorsSection = () => {
@@ -34,20 +38,34 @@ const SponsorsSection = () => {
             imageAlt="Altius services logo"
           />
         </div>
-        {/* <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row">
         <SponsorsCard
             margin="lg:mt-16 mt-8 z-10"
             imagePadding="p-3 md:p-8"
-            imageSrc={WeightsImage}
-            imageAlt="Google logo"
+            imageSrc={GithubImage}
+            imageAlt="Github logo"
           />
           <SponsorsCard
             margin="lg:mt-32 mt-8 z-10"
             imagePadding="p-3 md:p-8"
-            imageSrc={WeightsImage}
-            imageAlt="Google logo"
+            imageSrc={InstaDeepImage}
+            imageAlt="InstaDeep logo"
           />
-        </div> */}
+        </div>
+        <div className="flex flex-col lg:flex-row">
+        <SponsorsCard
+            margin="lg:mt-16 mt-8 z-10"
+            imagePadding="p-3 md:p-16"
+            imageSrc={LGImage}
+            imageAlt="LG logo"
+          />
+          <SponsorsCard
+            margin="lg:mt-32 mt-8 z-10"
+            imagePadding="p-3 md:p-8"
+            imageSrc={GomycodeImage}
+            imageAlt="Gomycode logo"
+          />
+        </div>
       </div>
       <div
         style={{ backgroundColor: "#3D8DF5", width: "20%" }}
