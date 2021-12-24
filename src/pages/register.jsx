@@ -60,7 +60,7 @@ function Register() {
         >
             <NavBar className="z-10 bg-blue" />
             <iframe
-                src="https://tripetto.app/run/CNMA35Y2F5"
+                src="https://tripetto.app/run/EWHCQNPB6A"
                 className="h-screen w-full"
                 frameBorder="0"
                 title="Form Registration"

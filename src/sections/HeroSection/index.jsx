@@ -1,12 +1,12 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import NavBar from '../../components/NavBar'
+import { navigate } from 'gatsby'
 import BitsImage from '../../images/bits.png'
 import DevfestLogo from '../../images/logo.svg'
 import DevfestGlobe from '../../components/DevFestGlob'
-import SubscribeButton from '../../components/common/SubscribeButton'
 import Countdown from '../../components/Countdown'
-import Alert from '../../components/common/Alert/Alert'
+import RegisterButton from '../../components/common/RegisterButton'
 
 const HeroSection = () => {
     return (
@@ -116,7 +116,7 @@ const HeroSection = () => {
                             />
                         </div>
                         <div className=" pt-0 lg:pt-14 flex justify-start lg:justify-center">
-                            <SubscribeButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28 " />
+                            <RegisterButton classes=" py-2 md:py-5 text-lg md:text-3xl lg:text-4xl px-8 md:px-14 lg:px-28 " onClick={() => navigate('/register')} />
                         </div>
                     </div>
                     <div className="w-3/5 hidden lg:block ">
