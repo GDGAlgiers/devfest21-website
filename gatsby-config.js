@@ -34,12 +34,11 @@ module.exports = {
             options: {
                 headers: {
                     '/*': [
-                        'X-XSS-Protection: 1; mode=block',
-                        'X-Content-Type-Options: nosniff',
-                        'Referrer-Policy: same-origin',
-                        `Content-Security-Policy: frame-ancestors 'self' https://iframetester.com`,
+                        "Content-Security-Policy: frame-ancestors 'self' https://*.iframetester.com/",
+                        'X-Frame-Options: ALLOW-FROM https://iframetester.com/',
                     ],
                 },
+                mergeSecurityHeaders: false,
             },
         },
         `gatsby-transformer-sharp`,
