@@ -29,7 +29,19 @@ module.exports = {
     /* Your site config here */
     plugins: [
         `gatsby-plugin-postcss`,
-        `gatsby-plugin-netlify`,
+        {
+            resolve: 'gatsby-plugin-netlify',
+            options: {
+                headers: {
+                    '/*': [
+                        'X-XSS-Protection: 1; mode=block',
+                        'X-Content-Type-Options: nosniff',
+                        'Referrer-Policy: same-origin',
+                        `Content-Security-Policy: frame-ancestors 'self' https://iframetester.com`,
+                    ],
+                },
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-styled-components`,
