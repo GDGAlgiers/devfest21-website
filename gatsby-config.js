@@ -29,18 +29,6 @@ module.exports = {
     /* Your site config here */
     plugins: [
         `gatsby-plugin-postcss`,
-        {
-            resolve: 'gatsby-plugin-netlify',
-            options: {
-                headers: {
-                    '/*': [
-                        "Content-Security-Policy: frame-ancestors 'self' https://*.iframetester.com/",
-                        'X-Frame-Options: ALLOW-FROM https://iframetester.com/',
-                    ],
-                },
-                mergeSecurityHeaders: false,
-            },
-        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-styled-components`,
