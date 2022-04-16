@@ -2,7 +2,7 @@ const questions = [
     {
         id: 1,
         title: 'What is a Hackathon?',
-        content: 'A Hackathon is a type of a competiotion in which a large number of people meet to engage in collaborative computer programming.',
+        content: 'A Hackathon is a type of a competition in which a large number of people meet to engage in collaborative computer programming.',
     },
     {
         id: 2,
