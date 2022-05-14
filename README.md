@@ -7,9 +7,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/GDGAlgiers/devfest21-website">
-    <img src="static/poster.png" alt="devfest" >
-  </a>
+
+   <a href="https://ibb.co/kB5c0xf"><img src="https://i.ibb.co/3d4hW7q/logo.png" alt="logo" border="0" /></a>
+  
 
   <h3 align="center">DevFest Algiers 2021 Website</h3>
 
